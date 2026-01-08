@@ -1,0 +1,128 @@
+
+:host {
+  display: block;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* Layout principal */
+.main-page {
+  min-height: 100vh;
+  max-width: var(--container);
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 44px;
+
+  padding: 16px 72px 72px;
+}
+
+/* Bloque de texto */
+.text-container {
+  max-width: 780px;
+}
+
+/* Saludo */
+.text-container span {
+  display: inline-block;
+  margin-bottom: 22px;
+
+  font-size: 12px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+
+  color: var(--muted);
+}
+
+/* Título principal */
+.text-container h1 {
+  margin: 0 0 24px;
+
+  font-weight: 800;
+  line-height: 0.96;
+  letter-spacing: -0.02em;
+
+  font-size: clamp(52px, 7vw, 92px);
+}
+
+/* Texto descriptivo */
+.text-container p {
+  margin: 0;
+  max-width: 560px;
+
+  font-size: 16px;
+  line-height: 1.8;
+
+  color: var(--muted);
+}
+
+/* Contenedor del botón */
+.button-container {
+  display: flex;
+  align-items: center;
+}
+
+/* Botón de contacto / perfil */
+.contact-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 46px;
+  padding: 0 28px;
+
+  border-radius: var(--radius);
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  color: #0b0b0e;
+  background: var(--accent);
+  border: 1px solid transparent;
+
+  box-shadow: 0 10px 22px var(--accent-soft);
+
+  transition: background 120ms ease, box-shadow 120ms ease,
+    transform 120ms ease;
+}
+
+/* Hover */
+.contact-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 14px 30px rgba(255, 79, 163, 0.28);
+}
+
+/* Active */
+.contact-button:active {
+  transform: translateY(0);
+}
+
+/* Focus accesible */
+.contact-button:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(255, 79, 163, 0.25);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .main-page {
+    padding: 48px 24px 48px;
+  }
+
+  .text-container p {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 520px) {
+  .button-container {
+    width: 100%;
+  }
+
+  .contact-button {
+    width: 100%;
+  }
+}

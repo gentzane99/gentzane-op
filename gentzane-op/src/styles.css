@@ -1,1 +1,30 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'normalize.css';
+
+/* Variables globales */
+:root {
+  --bg: #0b0b0e;
+  --surface: rgba(255, 255, 255, 0.04);
+  --text: #f4f4f5;
+  --muted: rgba(244, 244, 245, 0.7);
+  --border: rgba(244, 244, 245, 0.10);
+
+  --accent: #ff4fa3;
+  --accent-soft: rgba(255, 79, 163, 0.18);
+
+  --container: 1120px;
+  --radius: 14px;
+
+  --font: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial;
+}
+
+/* Base */
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0; /* normalize ya ayuda, pero esto es correcto */
+  font-family: var(--font);
+  color: var(--text);
+  background: var(--bg);
+}

@@ -1,13 +1,15 @@
-<header>
-    <h1>Gentzane Pastor Oleagoitia</h1>
-    <nav>
-        <ul>
-            <li><a routerLink = "home">Inicio</a></li>
-            <li><a routerLink = "games">Juegos</a></li>
-            <li><a routerLink = "projects">Proyectos</a></li>
-            <li><a routerLink = "education">Educación</a></li>
-            <li><a routerLink = "demo">Demo</a></li>
-            <li><a routerLink = "contact">Contacto</a></li>
-        </ul>
-    </nav>
+<header class="page-header">
+    <div class="header-container">
+    <h1 class="header-title">Gentzane Pastor Oleagoitia</h1>
+        <nav class="header-nav">
+            <ul class="nav-list">
+                <li><a routerLink="home" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Inicio</a></li>
+                <li><a routerLink="games" routerLinkActive="active">Juegos</a></li>
+                <li><a routerLink="projects" routerLinkActive="active">Proyectos</a></li>
+                <li><a routerLink="education" routerLinkActive="active">Educación</a></li>
+                <li><a routerLink="demo" routerLinkActive="active">Demo</a></li>
+                <li><a routerLink="contact" routerLinkActive="active">Contacto</a></li>
+            </ul>
+        </nav>    
+    </div>
 </header>
