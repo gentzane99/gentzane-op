@@ -1,0 +1,29 @@
+<article class="gameContainer">
+    <div class="imageContainer">
+        <img [src]="game.image" [alt]="game.title">
+    </div>
+
+    <div class="gameData">
+        <span class="date">{{game.date}}</span>
+        <h1 class="title">{{game.title}}</h1>
+        <span class="role">{{game.role}}</span>
+        <p class="description">{{game.description}}</p>
+
+        <ul class="tagsContainer">
+        @for(tag of game.tags; track tag){
+            <li class="tag">{{tag}}</li>
+        }
+        </ul>
+
+        @if (game.nominations) {
+            <ul class="nominationsContainer">
+                @for(nomi of game.nominations; track nomi){
+                    <li class="nominations">· {{nomi}}</li>
+                }
+            </ul>
+        }
+
+        <a [href]="game.link" class="link" target="_blank">Ver Juego</a>
+
+    </div>
+</article>

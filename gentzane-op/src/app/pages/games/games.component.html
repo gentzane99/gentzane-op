@@ -1,1 +1,20 @@
-<p>games works!</p>
+<section class="gamesPage">
+
+    <header class="gamesHeader">
+        <span class="gamesTitle">JUEGOS</span>
+        <p class="gamesInfo">Una selección de proyectos de videojuegos desarrollados durante mi formación en DigiPen Bilbao.</p>
+    </header> 
+
+    @if(loading){
+        <div class="state">Cargando juegos...</div>
+    } @else if (error){
+        <div class="state error">{{error}}</div>
+    } @else {
+        <div class="gamesContainer">
+            @for (game of games; track game.id) {
+                <app-game-card [game]="game" ></app-game-card>
+            }
+        </div>
+    }
+
+</section>

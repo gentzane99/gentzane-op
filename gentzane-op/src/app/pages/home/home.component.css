@@ -6,7 +6,7 @@
 }
 
 /* Layout principal */
-.main-page {
+.mainPage {
   min-height: 100vh;
   max-width: var(--container);
   margin: 0 auto;
@@ -20,12 +20,12 @@
 }
 
 /* Bloque de texto */
-.text-container {
+.textContainer {
   max-width: 780px;
 }
 
 /* Saludo */
-.text-container span {
+.textContainer span {
   display: inline-block;
   margin-bottom: 22px;
 
@@ -37,7 +37,7 @@
 }
 
 /* Título principal */
-.text-container h1 {
+.textContainer h1 {
   margin: 0 0 24px;
 
   font-weight: 800;
@@ -48,7 +48,7 @@
 }
 
 /* Texto descriptivo */
-.text-container p {
+.textContainer p {
   margin: 0;
   max-width: 560px;
 
@@ -59,13 +59,13 @@
 }
 
 /* Contenedor del botón */
-.button-container {
+.buttonContainer {
   display: flex;
   align-items: center;
 }
 
 /* Botón de contacto / perfil */
-.contact-button {
+.contactButton {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -90,39 +90,39 @@
 }
 
 /* Hover */
-.contact-button:hover {
+.contactButton:hover {
   transform: translateY(-1px);
   box-shadow: 0 14px 30px rgba(255, 79, 163, 0.28);
 }
 
 /* Active */
-.contact-button:active {
+.contactButton:active {
   transform: translateY(0);
 }
 
 /* Focus accesible */
-.contact-button:focus-visible {
+.contactButton:focus-visible {
   outline: none;
   box-shadow: 0 0 0 4px rgba(255, 79, 163, 0.25);
 }
 
 /* Responsive */
 @media (max-width: 900px) {
-  .main-page {
+  .mainPage {
     padding: 48px 24px 48px;
   }
 
-  .text-container p {
+  .textContainer p {
     max-width: 100%;
   }
 }
 
 @media (max-width: 520px) {
-  .button-container {
+  .buttonContainer {
     width: 100%;
   }
 
-  .contact-button {
+  .contactButton {
     width: 100%;
   }
 }

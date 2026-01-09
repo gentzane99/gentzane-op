@@ -1,0 +1,153 @@
+/* Card wrapper */
+.gameContainer {
+  border-radius: calc(var(--radius) + 4px);
+  overflow: hidden;
+
+  background: var(--surface);
+  border: 1px solid var(--border);
+
+  transition: border-color 180ms ease, transform 180ms ease;
+}
+
+.gameContainer:hover {
+  border-color: var(--accent-soft);
+  transform: translateY(-1px);
+}
+
+/* Image */
+.imageContainer {
+  width: 100%;
+  height: 270px;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.imageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Content */
+.gameData {
+  padding: 22px 22px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Date (small accent) */
+.date {
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  opacity: 0.95;
+}
+
+/* Title */
+.title {
+  margin: 0;
+  font-size: 34px;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  font-weight: 800;
+  color: var(--text);
+}
+
+/* Role */
+.role {
+  font-size: 14px;
+  color: var(--muted);
+}
+
+/* Description */
+.description {
+  margin: 6px 0 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--muted);
+  max-width: 62ch;
+}
+
+/* Tags */
+.tagsContainer {
+  margin: 14px 0 6px;
+  padding: 0;
+  list-style: none;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  padding: 6px 10px;
+  font-size: 12px;
+  line-height: 1;
+  border-radius: 999px;
+
+  color: var(--accent);
+  border: 1px solid rgba(244, 244, 245, 0.14);
+  background: var(--accent-soft);
+}
+
+/* Nominations (optional) */
+.nominationsContainer {
+  margin: 6px 0 2px;
+  padding: 0;
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.nominations {
+  font-size: 12px;
+  line-height: 1.45;
+  color: var(--muted);
+}
+
+/* Link row (label + divider + external icon) */
+.link {
+  margin-top: 10px;
+  padding-top: 14px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 12px;
+  font-weight: 700;
+
+  color: var(--accent);
+  border-top: 1px solid var(--border);
+  transition: opacity 150ms ease;
+}
+
+.link:hover {
+  opacity: 0.9;
+}
+
+/* External icon without changing HTML */
+.link::after {
+  content: "↗";
+  font-size: 14px;
+  line-height: 1;
+  opacity: 0.9;
+}
+
+/* Responsive */
+@media (max-width: 520px) {
+  .imageContainer {
+    height: 220px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+}
