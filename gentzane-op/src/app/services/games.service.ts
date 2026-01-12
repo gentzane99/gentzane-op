@@ -11,6 +11,6 @@ export class GamesService {
     private httpClient = inject(HttpClient);
 
   async getGames(): Promise<IGame[]>{
-    return await firstValueFrom(this.httpClient.get<IGame[]>('assets/data/games.json'))
+    return await firstValueFrom(this.httpClient.get<IGame[]>('/assets/data/games.json'))
   }
 }

@@ -13,8 +13,8 @@
   display: inline-block;
   margin-bottom: 16px;
 
-  font-size: 12px;
-  letter-spacing: 0.24em;
+  font-size: 50px;
+  font-weight: 700;
   text-transform: uppercase;
   color: var(--accent);
 }

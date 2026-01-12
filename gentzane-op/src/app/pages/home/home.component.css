@@ -7,7 +7,7 @@
 
 /* Layout principal */
 .mainPage {
-  min-height: 100vh;
+  min-height: calc(100vh - var(--header-height));
   max-width: var(--container);
   margin: 0 auto;
 
@@ -15,8 +15,6 @@
   flex-direction: column;
   justify-content: center;
   gap: 44px;
-
-  padding: 16px 72px 72px;
 }
 
 /* Bloque de texto */
