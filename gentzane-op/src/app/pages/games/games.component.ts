@@ -1,4 +1,4 @@
-import { ChangeDetectorRef, Component, inject } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { IGame } from '../../interfaces/igame.interface';
 import { GamesService } from '../../services/games.service';
 import { GameCardComponent } from './game-card/game-card.component';
@@ -14,7 +14,6 @@ export class GamesComponent {
     games: IGame[] = [];
     loading = true; 
     error: string | null = null;
-    private cdr = inject(ChangeDetectorRef);
 
     async ngOnInit(){
         try {
@@ -24,7 +23,5 @@ export class GamesComponent {
             console.error(this.error, error)
         }
         this.loading = false;
-        console.log(this.games);
-        //this.cdr.detectChanges();   
     }
 }

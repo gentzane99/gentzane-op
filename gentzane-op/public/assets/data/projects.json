@@ -1,0 +1,76 @@
+[
+    {
+        "id": 1,
+        "title": "Agoodshop – Product Detail Page",
+        "image": "assets/projects/AgoodshopMaquetacion.png",
+        "description": "Maqueta responsive de la página de detalle de un producto para la tienda ficticia Agoodshop. Actividad académica para practicar HTML semántico y maquetación responsive.",
+        "tags": ["HTML5", "CSS3", "Responsive Design", "Semantic HTML"],
+        "link": "https://github.com/gentzane99/Projects/tree/main/FullStack/UNIR/03_AgoodshopMaquetacion",
+        "category": "UNIR"
+    },
+    {
+      "id": 2,
+      "title": "Agoodshop – Shopping Cart",
+      "image": "assets/projects/AgoodshopCarrito.png",
+      "description": "Implementación del carrito de compra de Agoodshop, enfocada en la lógica del carrito con POO en JavaScript, consumo de datos desde una API simulada (JSON) y actualización dinámica del DOM.",
+      "tags": ["HTML5", "CSS3", "JavaScript", "OOP", "API (JSON)", "DOM Manipulation"],
+      "link": "https://github.com/gentzane99/Projects/tree/main/FullStack/UNIR/04_AgoodshopCarrito",
+      "category": "UNIR"
+    },
+    {
+      "id": 3,
+      "title": "Angular Blogging System",
+      "image": "assets/projects/AngularBlog.png",
+      "description": "Sistema de blogging desarrollado en Angular como SPA, centrado en la creación y listado dinámico de publicaciones mediante formularios, data binding y validación de datos.",
+      "tags": ["Angular", "TypeScript", "SPA", "Forms", "Data Binding", "Directives"],
+      "link": "https://github.com/gentzane99/Projects/tree/main/FullStack/UNIR/05_AngularBlogging",
+      "category": "UNIR"
+    },
+    {
+      "id": 4,
+      "title": "Angular Users CRUD – External API",
+      "image": "assets/projects/AngularUsers.png",
+      "description": "Aplicación Angular con CRUD completo de usuarios consumiendo una API REST externa. Incluye rutas, componentes y servicios, formularios reutilizados con validaciones y confirmación de borrado.",
+      "tags": ["Angular", "TypeScript", "CRUD", "REST API", "HTTP Client", "Routing", "Services", "Bootstrap", "Forms"],
+      "link": "https://github.com/gentzane99/Projects/tree/main/FullStack/UNIR/06_AngularApiUsers",
+      "category": "UNIR"
+    },
+    {
+      "id": 5,
+      "title": "Diseño de Bases de Datos con MySQL",
+      "image": "assets/projects/BBDD.png",
+      "description": "Proyecto académico centrado en el diseño y modelado de bases de datos relacionales con MySQL. Incluye diseño desde requisitos, normalización, relaciones entre entidades y ejecución de consultas SQL complejas.",
+      "tags": ["MySQL", "SQL", "Database Design", "Normalization", "ER Model", "MySQL Workbench"],
+      "link": "https://github.com/gentzane99/Projects/tree/main/FullStack/UNIR/07_MysqlDatabaseDesign#dise%C3%B1o-de-bases-de-datos-con-mysql",
+      "category": "UNIR"
+    },
+    {
+      "id": 6,
+      "title": "Blog API con Express y MySQL",
+      "image": "assets/projects/BlogAPI.png",
+      "description": "API REST desarrollada con Express.js y MySQL para la gestión de un sistema de blog con autores y posts, implementando un CRUD completo y relaciones mediante claves foráneas.",
+      "tags": ["Node.js", "Express.js", "MySQL", "REST API", "CRUD", "SQL", "Backend"],
+      "link": "https://github.com/gentzane99/Projects/tree/main/FullStack/UNIR/08_ExpressMysqlBlogApi",
+      "category": "UNIR"
+    },
+    {
+      "id": 7,
+      "title": "TravelTogether – Proyecto Final TFM",
+      "image": "assets/projects/TravelTogether.png",
+      "description": "Aplicación web fullstack para conectar personas interesadas en viajar en grupo. Permite crear y gestionar viajes, solicitudes de participación, perfiles de usuario, comunicación interna y sistema de valoraciones. Proyecto final desarrollado con metodología ágil y desplegado en producción.",
+      "tags": [
+        "Angular",
+        "TypeScript",
+        "Node.js",
+        "Express",
+        "REST API",
+        "Fullstack",
+        "MySQL",
+        "Authentication",
+        "Scrum",
+        "Deployment"
+      ],
+      "link": "https://github.com/gentzane99/Projects/tree/main/FullStack/UNIR/TFM",
+      "category": "UNIR"
+    }
+]
