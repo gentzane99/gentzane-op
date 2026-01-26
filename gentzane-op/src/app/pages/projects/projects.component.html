@@ -1,1 +1,17 @@
-<p>projects works!</p>
+<section class="projectsPage">
+    <header class="fullstackHeader">
+        <span class="fullstackTitle">Proyectos Web Fullstack</span>
+        <p class="fulsstackInfo">Proyectos académicos de desarrollo web realizados en UNIR.</p>
+    </header>
+    @if(loading){
+        <div class="state">Cargando juegos...</div>
+    } @else if (error){
+        <div class="state error">{{error}}</div>
+    } @else{
+        <div class="projectsContainer">
+            @for (pro of projects; track pro.id) {
+                <app-projects-card [project]="pro" ></app-projects-card>
+            }
+        </div>
+    }
+</section>

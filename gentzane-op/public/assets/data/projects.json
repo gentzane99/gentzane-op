@@ -2,7 +2,7 @@
     {
         "id": 1,
         "title": "Agoodshop – Product Detail Page",
-        "image": "assets/projects/AgoodshopMaquetacion.png",
+        "image": "assets/projects/Fullstack/AgoodshopMaquetacion.png",
         "description": "Maqueta responsive de la página de detalle de un producto para la tienda ficticia Agoodshop. Actividad académica para practicar HTML semántico y maquetación responsive.",
         "tags": ["HTML5", "CSS3", "Responsive Design", "Semantic HTML"],
         "link": "https://github.com/gentzane99/Projects/tree/main/FullStack/UNIR/03_AgoodshopMaquetacion",
@@ -11,7 +11,7 @@
     {
       "id": 2,
       "title": "Agoodshop – Shopping Cart",
-      "image": "assets/projects/AgoodshopCarrito.png",
+      "image": "assets/projects/Fullstack/AgoodshopCarrito.png",
       "description": "Implementación del carrito de compra de Agoodshop, enfocada en la lógica del carrito con POO en JavaScript, consumo de datos desde una API simulada (JSON) y actualización dinámica del DOM.",
       "tags": ["HTML5", "CSS3", "JavaScript", "OOP", "API (JSON)", "DOM Manipulation"],
       "link": "https://github.com/gentzane99/Projects/tree/main/FullStack/UNIR/04_AgoodshopCarrito",
@@ -20,7 +20,7 @@
     {
       "id": 3,
       "title": "Angular Blogging System",
-      "image": "assets/projects/AngularBlog.png",
+      "image": "assets/projects/Fullstack/AngularBlog.png",
       "description": "Sistema de blogging desarrollado en Angular como SPA, centrado en la creación y listado dinámico de publicaciones mediante formularios, data binding y validación de datos.",
       "tags": ["Angular", "TypeScript", "SPA", "Forms", "Data Binding", "Directives"],
       "link": "https://github.com/gentzane99/Projects/tree/main/FullStack/UNIR/05_AngularBlogging",
@@ -29,7 +29,7 @@
     {
       "id": 4,
       "title": "Angular Users CRUD – External API",
-      "image": "assets/projects/AngularUsers.png",
+      "image": "assets/projects/Fullstack/AngularUsers.png",
       "description": "Aplicación Angular con CRUD completo de usuarios consumiendo una API REST externa. Incluye rutas, componentes y servicios, formularios reutilizados con validaciones y confirmación de borrado.",
       "tags": ["Angular", "TypeScript", "CRUD", "REST API", "HTTP Client", "Routing", "Services", "Bootstrap", "Forms"],
       "link": "https://github.com/gentzane99/Projects/tree/main/FullStack/UNIR/06_AngularApiUsers",
@@ -38,7 +38,7 @@
     {
       "id": 5,
       "title": "Diseño de Bases de Datos con MySQL",
-      "image": "assets/projects/BBDD.png",
+      "image": "assets/projects/Fullstack/BBDD.png",
       "description": "Proyecto académico centrado en el diseño y modelado de bases de datos relacionales con MySQL. Incluye diseño desde requisitos, normalización, relaciones entre entidades y ejecución de consultas SQL complejas.",
       "tags": ["MySQL", "SQL", "Database Design", "Normalization", "ER Model", "MySQL Workbench"],
       "link": "https://github.com/gentzane99/Projects/tree/main/FullStack/UNIR/07_MysqlDatabaseDesign#dise%C3%B1o-de-bases-de-datos-con-mysql",
@@ -47,7 +47,7 @@
     {
       "id": 6,
       "title": "Blog API con Express y MySQL",
-      "image": "assets/projects/BlogAPI.png",
+      "image": "assets/projects/Fullstack/BlogAPI.png",
       "description": "API REST desarrollada con Express.js y MySQL para la gestión de un sistema de blog con autores y posts, implementando un CRUD completo y relaciones mediante claves foráneas.",
       "tags": ["Node.js", "Express.js", "MySQL", "REST API", "CRUD", "SQL", "Backend"],
       "link": "https://github.com/gentzane99/Projects/tree/main/FullStack/UNIR/08_ExpressMysqlBlogApi",
@@ -56,7 +56,7 @@
     {
       "id": 7,
       "title": "TravelTogether – Proyecto Final TFM",
-      "image": "assets/projects/TravelTogether.png",
+      "image": "assets/projects/Fullstack/TravelTogether.png",
       "description": "Aplicación web fullstack para conectar personas interesadas en viajar en grupo. Permite crear y gestionar viajes, solicitudes de participación, perfiles de usuario, comunicación interna y sistema de valoraciones. Proyecto final desarrollado con metodología ágil y desplegado en producción.",
       "tags": [
         "Angular",
@@ -72,5 +72,189 @@
       ],
       "link": "https://github.com/gentzane99/Projects/tree/main/FullStack/UNIR/TFM",
       "category": "UNIR"
+    },
+    {
+        "id": 8,
+        "title": "GALACTERS – Console Arcade Shooter",
+        "image": "assets/projects/GameDev/Galacters.png",
+        "description": "Juego arcade en consola (Windows) desarrollado en C: elimina a todos los enemigos evitando contacto y proyectiles. Incluye selección de dificultad y naves con atributos (velocidad/vida) al inicio.",
+        "tags": [
+          "C",
+          "Console Game",
+          "Windows Console",
+          "Game Loop",
+          "State Machine",
+          "Input Handling",
+          "Difficulty Modes",
+          "Gameplay Systems"
+        ],
+        "link": "https://github.com/gentzane99/Projects",
+        "category": "DigiPen",
+        "course": "CS120",
+        "release": "https://github.com/gentzane99/Projects/tree/main/GameDev/CS120%20(High-Level%20Programming)/GalactersPrototype"
+    },
+    {
+        "id": 9,
+        "title": "Software Rendering & Camera Systems",
+        "image": "assets/projects/GameDev/Tank.png",
+        "description": "Implementación de un pipeline 3D por software en C++ con transformaciones jerárquicas, proyección en perspectiva y múltiples sistemas de cámara (primera persona, tercera persona y cámara fija).",
+        "tags": [
+          "C++",
+          "Software Rendering",
+          "3D Graphics",
+          "Transformation Matrices",
+          "Matrix Stack",
+          "Hierarchical Models",
+          "Perspective Projection",
+          "Camera Systems",
+          "First-Person Camera",
+          "Third-Person Camera",
+          "Rasterization",
+          "Culling"
+        ],
+        "link": "https://github.com/gentzane99/Projects/tree/main/GameDev/CS250%20(Computer%20Graphics)/01.TankAssignment",
+        "category": "DigiPen",
+        "course": "CS250",
+        "release": "https://github.com/gentzane99/Projects/releases/tag/cs250-tank-v1.0"
+    },
+    {
+        "id": 10,
+        "title": "Software Rendering Pipeline – Visibility & Depth",
+        "image": "assets/projects/GameDev/Plane.png",
+        "description": "Pipeline 3D por software en C++ con rotaciones axis-angle, matrices ortogonales, depth buffering y técnicas de visibilidad como culling, back-face removal y clipping.",
+        "tags": [
+          "C++",
+          "Software Rendering",
+          "3D Graphics",
+          "Axis-Angle Rotation",
+          "Orthogonal Matrix",
+          "Depth Buffer",
+          "Frustum Culling",
+          "Back-Face Culling",
+          "Clipping",
+          "Rasterization",
+          "Camera Systems"
+        ],
+        "link": "https://github.com/gentzane99/Projects/tree/main/GameDev/CS250%20(Computer%20Graphics)/02.PlaneAssignment",
+        "category": "DigiPen",
+        "course": "CS250",
+        "release": "https://github.com/gentzane99/Projects/releases/tag/cs250-plane-v1.0"
+    },
+    {
+        "id": 11,
+        "title": "Procedural Geometry & Phong Illumination",
+        "image": "assets/projects/GameDev/Phong.png",
+        "description": "Proyecto de gráficos en C++/OpenGL con generación procedural de mallas y un pipeline de iluminación Phong en GLSL, incluyendo control de cámara orbital y múltiples tipos de luz.",
+        "tags": [
+          "C++",
+          "OpenGL",
+          "GLSL",
+          "Procedural Mesh Generation",
+          "Phong Lighting",
+          "Shader Programming",
+          "Vertex Attributes",
+          "Normals & UVs",
+          "Wireframe Rendering",
+          "Camera Controls",
+          "Lighting Systems"
+        ],
+        "link": "https://github.com/gentzane99/Projects/tree/main/GameDev/CS300%20(Advanced%20Computer%20Graphics)/01.PhongLight",
+        "category": "DigiPen",
+        "course": "CS300",
+        "release": "https://github.com/gentzane99/Projects/releases/tag/cs300-procedural-geometry-phong-v1.0"
+    },
+    {
+        "id": 12,
+        "title": "Normal Mapping & Tangent-Space Shading",
+        "image": "assets/projects/GameDev/NormalMapping.png",
+        "description": "Extensión de un pipeline Phong en C++/OpenGL con normal mapping en espacio tangente, generación de tangentes/bitangentes y modos de depuración para visualizar bases TBN.",
+        "tags": [
+          "C++",
+          "OpenGL",
+          "GLSL",
+          "Normal Mapping",
+          "Tangent Space",
+          "Phong Lighting",
+          "Procedural Geometry",
+          "TBN Matrix",
+          "Shader Programming",
+          "Lighting Systems",
+          "Camera Controls",
+          "Debug Visualization"
+        ],
+        "link": "https://github.com/gentzane99/Projects/tree/main/GameDev/CS300%20(Advanced%20Computer%20Graphics)/02.NormalMapping",
+        "category": "DigiPen",
+        "course": "CS300",
+        "release": "https://github.com/gentzane99/Projects/releases/tag/cs300-normal-mapping-v1.0"
+    },
+    {
+        "id": 13,
+        "title": "Shadow Mapping with PCF",
+        "image": "assets/projects/GameDev/ShadowMap.png",
+        "description": "Implementación en C++/OpenGL de shadow mapping para spotlight con pipeline de dos pasadas y Percentage-Closer Filtering (PCF) para suavizar bordes de sombra, integrado en iluminación Phong.",
+        "tags": [
+          "C++",
+          "OpenGL",
+          "GLSL",
+          "Shadow Mapping",
+          "PCF",
+          "Two-Pass Rendering",
+          "Spotlight Shadows",
+          "Depth Textures",
+          "Phong Lighting",
+          "Procedural Geometry",
+          "Camera Controls",
+          "Debug Visualization"
+        ],
+        "link": "https://github.com/gentzane99/Projects/tree/main/GameDev/CS300%20(Advanced%20Computer%20Graphics)/03.ShadowMap",
+        "category": "DigiPen",
+        "course": "CS300",
+        "release": "https://github.com/gentzane99/Projects/releases/tag/cs300-shadow-mapping-pcf-v1.0"
+    },
+    {
+        "id": 14,
+        "title": "Reflection & Refraction with Cube Mapping",
+        "image": "assets/projects/GameDev/Reflection&Reflaction.png",
+        "description": "Proyecto en C++/OpenGL que implementa environment mapping en tiempo real mediante cube maps dinámicos, soportando reflexión y refracción con un pipeline de dos pasadas.",
+        "tags": [
+          "C++",
+          "OpenGL",
+          "GLSL",
+          "Cube Mapping",
+          "Environment Mapping",
+          "Reflection",
+          "Refraction",
+          "Two-Pass Rendering",
+          "Framebuffers (FBO)",
+          "Skybox Rendering",
+          "Procedural Geometry",
+          "Camera Controls"
+        ],
+        "link": "https://github.com/gentzane99/Projects/tree/main/GameDev/CS300%20(Advanced%20Computer%20Graphics)/04.Reflection%26Refraction",
+        "category": "DigiPen",
+        "course": "CS300",
+        "release": "https://github.com/gentzane99/Projects/releases/tag/cs300-cubemap-reflection-refraction-v1.0"
+    }, 
+    {
+      "id": 15,
+      "title": "Deep Q-Learning Snake AI",
+      "image": "assets/projects/GameDev/Snake.png",
+      "description": "Agente de IA para juegos implementado en C++ que aprende a jugar Snake mediante Deep Q-Learning (DQN), combinando redes neuronales, experience replay y políticas epsilon-greedy.",
+      "tags": [
+        "C++",
+        "Game AI",
+        "Reinforcement Learning",
+        "Deep Q-Learning",
+        "Neural Networks",
+        "Experience Replay",
+        "Epsilon-Greedy Policy",
+        "Bellman Update",
+        "Machine Learning",
+        "AI for Games"
+      ],
+      "link": "https://github.com/gentzane99/Projects/tree/main/GameDev/CS380%20(AI)/NeuralNetwork_Project",
+      "category": "DigiPen",
+      "course": "CS380",
+      "release": "https://github.com/gentzane99/Projects/releases/tag/cs380-dqn-snake-v1.0"
     }
 ]

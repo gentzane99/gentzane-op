@@ -1,3 +1,5 @@
+export type UNIRCategory = 'Frontend' | 'Backend' | 'Database' | 'Fullstack';
+export type DigipenCategory = 'CS120' | 'CS250' | 'CS300' | 'CS380';
 export interface IProject {
     id: number;
     title: string;
@@ -5,5 +7,7 @@ export interface IProject {
     description: string;
     tags: string[];
     link: string;
-    category: string;
+    category: 'UNIR' | 'DigiPen';
+    course: UNIRCategory | DigipenCategory;
+    release?: string; 
 }
