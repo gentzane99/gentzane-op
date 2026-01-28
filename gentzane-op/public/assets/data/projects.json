@@ -6,7 +6,8 @@
         "description": "Maqueta responsive de la página de detalle de un producto para la tienda ficticia Agoodshop. Actividad académica para practicar HTML semántico y maquetación responsive.",
         "tags": ["HTML5", "CSS3", "Responsive Design", "Semantic HTML"],
         "link": "https://github.com/gentzane99/Projects/tree/main/FullStack/UNIR/03_AgoodshopMaquetacion",
-        "category": "UNIR"
+        "category": "UNIR",
+        "course": "Frontend"
     },
     {
       "id": 2,
@@ -15,7 +16,8 @@
       "description": "Implementación del carrito de compra de Agoodshop, enfocada en la lógica del carrito con POO en JavaScript, consumo de datos desde una API simulada (JSON) y actualización dinámica del DOM.",
       "tags": ["HTML5", "CSS3", "JavaScript", "OOP", "API (JSON)", "DOM Manipulation"],
       "link": "https://github.com/gentzane99/Projects/tree/main/FullStack/UNIR/04_AgoodshopCarrito",
-      "category": "UNIR"
+      "category": "UNIR",
+      "course": "Frontend"
     },
     {
       "id": 3,
@@ -24,7 +26,8 @@
       "description": "Sistema de blogging desarrollado en Angular como SPA, centrado en la creación y listado dinámico de publicaciones mediante formularios, data binding y validación de datos.",
       "tags": ["Angular", "TypeScript", "SPA", "Forms", "Data Binding", "Directives"],
       "link": "https://github.com/gentzane99/Projects/tree/main/FullStack/UNIR/05_AngularBlogging",
-      "category": "UNIR"
+      "category": "UNIR",
+      "course": "Frontend"
     },
     {
       "id": 4,
@@ -33,7 +36,8 @@
       "description": "Aplicación Angular con CRUD completo de usuarios consumiendo una API REST externa. Incluye rutas, componentes y servicios, formularios reutilizados con validaciones y confirmación de borrado.",
       "tags": ["Angular", "TypeScript", "CRUD", "REST API", "HTTP Client", "Routing", "Services", "Bootstrap", "Forms"],
       "link": "https://github.com/gentzane99/Projects/tree/main/FullStack/UNIR/06_AngularApiUsers",
-      "category": "UNIR"
+      "category": "UNIR",
+      "course": "Frontend"
     },
     {
       "id": 5,
@@ -42,7 +46,8 @@
       "description": "Proyecto académico centrado en el diseño y modelado de bases de datos relacionales con MySQL. Incluye diseño desde requisitos, normalización, relaciones entre entidades y ejecución de consultas SQL complejas.",
       "tags": ["MySQL", "SQL", "Database Design", "Normalization", "ER Model", "MySQL Workbench"],
       "link": "https://github.com/gentzane99/Projects/tree/main/FullStack/UNIR/07_MysqlDatabaseDesign#dise%C3%B1o-de-bases-de-datos-con-mysql",
-      "category": "UNIR"
+      "category": "UNIR",
+      "course": "Database"
     },
     {
       "id": 6,
@@ -51,7 +56,8 @@
       "description": "API REST desarrollada con Express.js y MySQL para la gestión de un sistema de blog con autores y posts, implementando un CRUD completo y relaciones mediante claves foráneas.",
       "tags": ["Node.js", "Express.js", "MySQL", "REST API", "CRUD", "SQL", "Backend"],
       "link": "https://github.com/gentzane99/Projects/tree/main/FullStack/UNIR/08_ExpressMysqlBlogApi",
-      "category": "UNIR"
+      "category": "UNIR",
+      "course": "Backend"
     },
     {
       "id": 7,
@@ -71,7 +77,9 @@
         "Deployment"
       ],
       "link": "https://github.com/gentzane99/Projects/tree/main/FullStack/UNIR/TFM",
-      "category": "UNIR"
+      "category": "UNIR",
+      "course": "Fullstack"
+      
     },
     {
         "id": 8,
@@ -88,10 +96,10 @@
           "Difficulty Modes",
           "Gameplay Systems"
         ],
-        "link": "https://github.com/gentzane99/Projects",
+        "link": "https://github.com/gentzane99/Projects/tree/main/GameDev/CS120%20(High-Level%20Programming)/GalactersPrototype",
         "category": "DigiPen",
         "course": "CS120",
-        "release": "https://github.com/gentzane99/Projects/tree/main/GameDev/CS120%20(High-Level%20Programming)/GalactersPrototype"
+        "release": "https://github.com/gentzane99/Projects/releases/tag/cs120-galacters-v1.0"
     },
     {
         "id": 9,

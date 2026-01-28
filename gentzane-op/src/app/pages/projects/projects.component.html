@@ -1,17 +1,75 @@
-<section class="projectsPage">
-    <header class="fullstackHeader">
-        <span class="fullstackTitle">Proyectos Web Fullstack</span>
-        <p class="fulsstackInfo">Proyectos académicos de desarrollo web realizados en UNIR.</p>
-    </header>
+<main class="projects-page">
     @if(loading){
         <div class="state">Cargando juegos...</div>
     } @else if (error){
         <div class="state error">{{error}}</div>
     } @else{
-        <div class="projectsContainer">
-            @for (pro of projects; track pro.id) {
-                <app-projects-card [project]="pro" ></app-projects-card>
-            }
-        </div>
-    }
-</section>
+<!-- ===================== -->
+    <!-- PROYECTOS WEB FULLSTACK UNIR -->
+    <!-- ===================== -->
+    <section class="projects-section">
+      <header class="section-header">
+        <h1 class="section-title">Proyectos Web Fullstack</h1>
+        <p class="section-subtitle">
+          Proyectos de desarrollo web realizados durante el máster en Desarrollo Fullstack, organizados por especialidad.
+        </p>
+      </header>
+
+      @for (course of unirOrder; track course) {
+        <section class="group-block">
+          <div class="group-header group-header--lined">
+            <span class="group-pill">{{ course }}</span>
+          </div>
+
+          <div class="divider"></div>
+
+          @if (unirByCourse[course].length > 0) {
+            <div class="cards-grid">
+              @for (p of unirByCourse[course]; track p.id) {
+                <app-projects-card [project]="p" />
+              }
+            </div>
+          } @else {
+            <p class="empty">No hay proyectos en {{ course }} aún.</p>
+          }
+        </section>
+      }
+    </section>
+
+
+    <!-- ===================== -->
+    <!-- VIDEO GAME PROGRAMMING / DIGIPEN -->
+    <!-- ===================== -->
+    <section class="projects-section">
+      <header class="section-header">
+        <h1 class="section-title">Programación de Videojuegos</h1>
+        <p class="section-subtitle">
+          Proyectos de desarrollo de videojuegos y ciencias de la computación organizados por asignatura
+        </p>
+      </header>
+
+      @for (course of digipenOrder; track course) {
+        <section class="group-block">
+          <div class="group-header group-header--lined">
+            <span class="course-code">{{ course }}</span>
+            <span class="course-name">{{ digipenCourseNames[course] }}</span>
+          </div>
+
+          <div class="divider"></div>
+
+          @if (digipenByCourse[course].length > 0) {
+            <div class="cards-grid cards-grid--two">
+              @for (p of digipenByCourse[course]; track p.id) {
+                <app-projects-card [project]="p" />
+              }
+            </div>
+          } @else {
+            <p class="empty">No hay proyectos en {{ course }} aún.</p>
+          }
+        </section>
+      }
+    </section>
+
+  }
+
+</main>

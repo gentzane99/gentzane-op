@@ -1,1 +1,89 @@
-<p>projects-card works!</p>
+<article class="project-card">
+
+  <!-- Imagen -->
+  <div class="project-image">
+    <img
+      [src]="project.image"
+      [alt]="project.title"
+      loading="lazy"
+    />
+  </div>
+
+  <!-- Contenido -->
+  <div class="project-content">
+    <h3 class="project-title">{{ project.title }}</h3>
+
+    <p class="project-description">
+      {{ project.description }}
+    </p>
+
+    <!-- Tags -->
+    @if (project.tags.length > 0) {
+      <ul class="project-tags">
+        @for (tag of project.tags; track tag) {
+          <li class="tag">{{ tag }}</li>
+        }
+      </ul>
+    }
+
+    <!-- Acciones -->
+    <div
+      class="project-actions"
+      [class.project-actions--digipen]="project.category === 'DigiPen'"
+      [class.project-actions--unir]="project.category === 'UNIR'"
+    >
+      <a
+        class="btn btn--primary"
+        [href]="project.link"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        @if (project.category === 'DigiPen') {
+          <span class="btn-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="presentation">
+              <path
+                d="M10 14L21 3M15 3h6v6M21 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.8"
+              />
+            </svg>
+          </span>
+          CÓDIGO
+        } @else {
+          Ver proyecto
+        }
+      </a>
+
+      @if (project.release) {
+        <a
+          class="btn btn--secondary"
+          [href]="project.release"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          @if (project.category === 'DigiPen') {
+            <span class="btn-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="presentation">
+                <path
+                  d="M12 3v12m0 0l4-4m-4 4l-4-4M4 20h16"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.8"
+                />
+              </svg>
+            </span>
+            DESCARGA
+          } @else {
+            Descargar
+          }
+        </a>
+      }
+    </div>
+  </div>
+
+</article>
