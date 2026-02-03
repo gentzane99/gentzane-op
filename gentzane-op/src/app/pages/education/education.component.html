@@ -1,1 +1,22 @@
-<p>education works!</p>
+<main class="educationPage">
+
+    @if(loading){
+        <div class="state">Cargando juegos...</div>
+    } @else if (error){
+        <div class="state error">{{error}}</div>
+    } @else{
+    <section class="digipenConainer">
+        <header class="digipenHeader"> DigiPen Institute of Technology Europe - Bilbao </header>
+        <p class="rtisInfo"> Grado en Ingeniería Informática en Simulación Interactiva en Tiempo Real</p>
+
+        @for (cat of digipenCourses; track cat) {
+            <span class="digiPenCategoty">{{cat.title}}</span>
+            @for (course of cat.courses; track course) {
+                <span class="digipenCourseTitle">{{course.code}} - {{course.title}}</span>
+                <span class="digipenCourseInfo">{{course.description}}</span>
+            }
+        }
+    </section>
+    }   
+</main>
+

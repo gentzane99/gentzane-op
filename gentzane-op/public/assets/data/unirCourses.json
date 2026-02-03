@@ -1,0 +1,120 @@
+{
+  "institution": "UNIR - Universidad Internacional de La Rioja",
+  "education": {
+    "master": {
+      "title": "Master in Fullstack Development",
+      "period": "2024 - Present",
+      "intro": "Advanced web development program focusing on modern frameworks and cloud technologies.",
+      "modules": [
+        {
+          "id": "html-css",
+          "title": "HTML & CSS",
+          "summary": "Fundamentos de maquetación web moderna: HTML semántico, formularios, CSS avanzado, diseño responsive y uso de frameworks.",
+          "topics": [
+            "HTML semántico y validación",
+            "Formularios HTML5 y buenas prácticas",
+            "CSS: selectores, cascada y especificidad",
+            "Flexbox y CSS Grid",
+            "Responsive design y mobile first",
+            "Animaciones y SVG",
+            "Bootstrap y Tailwind CSS"
+          ]
+        },
+        {
+          "id": "git-terminal",
+          "title": "GIT & Terminal",
+          "summary": "Uso del terminal y control de versiones con Git para la gestión profesional de proyectos.",
+          "topics": [
+            "Terminal en Windows, Linux y Mac",
+            "Comandos básicos",
+            "Repositorios locales y remotos",
+            "Flujo de trabajo con Git",
+            "GitKraken y GitHub",
+            "Integración con VS Code"
+          ]
+        },
+        {
+          "id": "vanilla-js",
+          "title": "JavaScript Avanzado",
+          "summary": "Programación en JavaScript moderno: lógica, DOM, asincronía y POO.",
+          "topics": [
+            "Sintaxis y tipos de datos",
+            "Estructuras de control",
+            "Funciones y arrow functions",
+            "DOM y eventos",
+            "Programación orientada a objetos",
+            "Promesas y async/await",
+            "Fetch y HTTP"
+          ]
+        },
+        {
+          "id": "angular",
+          "title": "Angular & TypeScript",
+          "summary": "Desarrollo de aplicaciones SPA con Angular siguiendo arquitectura por componentes.",
+          "topics": [
+            "TypeScript y tipado",
+            "Componentes y ciclo de vida",
+            "Data binding y signals",
+            "Formularios y validaciones",
+            "Servicios y HTTP",
+            "Rutas y guards",
+            "Publicación y despliegue"
+          ]
+        },
+        {
+          "id": "databases",
+          "title": "Bases de Datos",
+          "summary": "Diseño y gestión de bases de datos relacionales y NoSQL.",
+          "topics": [
+            "MySQL y SQL",
+            "Modelo entidad-relación",
+            "CRUD",
+            "MongoDB y NoSQL",
+            "Aggregation e índices"
+          ]
+        },
+        {
+          "id": "node-express",
+          "title": "Node.js & Express",
+          "summary": "Desarrollo backend y APIs REST con Node.js y Express.",
+          "topics": [
+            "Node Core",
+            "Express y middlewares",
+            "APIs REST",
+            "Autenticación",
+            "Sockets"
+          ]
+        },
+        {
+          "id": "deploy-testing",
+          "title": "Deploy, Testing & CI/CD",
+          "summary": "Despliegue, testing y buenas prácticas de desarrollo.",
+          "topics": [
+            "Deploy en Firebase y Netlify",
+            "Testing con Jasmine y Jest",
+            "Principios SOLID",
+            "CI/CD"
+          ]
+        }
+      ]
+    },
+
+    "additionalCourses": [
+      {
+        "id": "python",
+        "title": "Python",
+        "type": "Complementary Course",
+        "summary": "Curso independiente de Python orientado a programación, análisis y visualización de datos.",
+        "topics": [
+          "Sintaxis y tipos de datos",
+          "Estructuras de control",
+          "Funciones y módulos",
+          "Programación orientada a objetos",
+          "Expresiones regulares y excepciones",
+          "Numpy y Pandas",
+          "Visualización de datos"
+        ]
+      }
+    ]
+  }
+}
