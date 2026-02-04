@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { IGame } from '../../../interfaces/igame.interface';
 
 @Component({
@@ -8,5 +8,5 @@ import { IGame } from '../../../interfaces/igame.interface';
   styleUrl: './game-card.component.css'
 })
 export class GameCardComponent {
-    @Input() game!: IGame;
+    game = input.required<IGame>();
 }

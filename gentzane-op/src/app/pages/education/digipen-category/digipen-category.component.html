@@ -1,0 +1,9 @@
+<button class="digiPenCategory" type="button" (click)="toggleCourses()" [attr.aria-expanded]="isOpen()">
+  <span class="categoryText">{{category().title}}</span>
+  <span class="chevron" aria-hidden="true"></span>
+</button>
+@if (isOpen()) {
+  @for (course of category().courses; track course) {
+      <app-digipen-course-card [course]=course></app-digipen-course-card>
+  }
+}

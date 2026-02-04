@@ -1,16 +1,17 @@
 import { Component, inject } from '@angular/core';
-import { ICoursesDigipen } from '../../interfaces/icoursedigipen.interface';
+import { ICategory } from '../../interfaces/icoursedigipen.interface';
 import { CoursesdigipenService } from '../../services/coursesdigipen.service';
+import { DigipenCategoryComponent } from './digipen-category/digipen-category.component';
 @Component({
     selector: 'app-education',
-    imports: [],
+    imports: [DigipenCategoryComponent],
     templateUrl: './education.component.html',
     styleUrl: './education.component.css',
 })
 export class EducationComponent {
 
     private digipenCourseService = inject(CoursesdigipenService);
-    digipenCourses: ICoursesDigipen[] = [];
+    digipenCourses: ICategory[] = [];
     loading = true; 
     error: string | null = null;
 

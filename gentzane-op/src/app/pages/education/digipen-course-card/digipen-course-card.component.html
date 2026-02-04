@@ -1,1 +1,6 @@
-<p>digipen-course-card works!</p>
+<button class="digipenCourseTitle" type="button" (click)="toggleDescription()" [attr.aria-expanded]="isOpen()">
+  <span class="titleText">{{course().code}} - {{course().title}}</span>
+</button>
+@if (isOpen()) {
+  <span class="digipenCourseInfo">{{course().description}}</span>
+}

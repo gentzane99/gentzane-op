@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { IProject } from '../../../interfaces/iproject.interface';
 
 @Component({
@@ -8,5 +8,5 @@ import { IProject } from '../../../interfaces/iproject.interface';
   styleUrl: './projects-card.component.css',
 })
 export class ProjectsCardComponent {
-    @Input() project!: IProject;
+  project = input.required<IProject>();
 }

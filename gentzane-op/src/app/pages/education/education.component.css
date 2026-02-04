@@ -1,0 +1,62 @@
+.educationPage {
+  padding: calc(var(--header-height) + 24px) 24px 64px;
+}
+
+.state {
+  max-width: var(--container);
+  margin: 40px auto 0;
+  padding: 16px 18px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--muted);
+}
+
+.state.error {
+  color: var(--text);
+  border-color: rgba(255, 79, 163, 0.45);
+  background: linear-gradient(180deg, rgba(255, 79, 163, 0.12), transparent);
+}
+
+.digipenConainer {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 28px 28px 36px;
+  background:
+    radial-gradient(1200px 500px at -10% -20%, rgba(255, 255, 255, 0.06), transparent),
+    var(--surface);
+  border: 1px solid var(--border);
+  border-radius: calc(var(--radius) + 4px);
+  box-shadow:
+    0 24px 60px rgba(0, 0, 0, 0.45),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.digipenHeader {
+  display: block;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.2px;
+  margin-bottom: 8px;
+}
+
+.rtisInfo {
+  margin: 0 0 18px;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+@media (max-width: 720px) {
+  .educationPage {
+    padding: calc(var(--header-height) + 16px) 16px 48px;
+  }
+
+  .digipenConainer {
+    padding: 22px 18px 28px;
+  }
+
+  .digipenHeader {
+    font-size: 22px;
+  }
+}

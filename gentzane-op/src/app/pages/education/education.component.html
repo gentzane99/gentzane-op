@@ -10,11 +10,7 @@
         <p class="rtisInfo"> Grado en Ingeniería Informática en Simulación Interactiva en Tiempo Real</p>
 
         @for (cat of digipenCourses; track cat) {
-            <span class="digiPenCategoty">{{cat.title}}</span>
-            @for (course of cat.courses; track course) {
-                <span class="digipenCourseTitle">{{course.code}} - {{course.title}}</span>
-                <span class="digipenCourseInfo">{{course.description}}</span>
-            }
+            <app-digipen-category [category]=cat ></app-digipen-category>
         }
     </section>
     }   

@@ -3,24 +3,24 @@
   <!-- Imagen -->
   <div class="project-image">
     <img
-      [src]="project.image"
-      [alt]="project.title"
+      [src]="project().image"
+      [alt]="project().title"
       loading="lazy"
     />
   </div>
 
   <!-- Contenido -->
   <div class="project-content">
-    <h3 class="project-title">{{ project.title }}</h3>
+    <h3 class="project-title">{{ project().title }}</h3>
 
     <p class="project-description">
-      {{ project.description }}
+      {{ project().description }}
     </p>
 
     <!-- Tags -->
-    @if (project.tags.length > 0) {
+    @if (project().tags.length > 0) {
       <ul class="project-tags">
-        @for (tag of project.tags; track tag) {
+        @for (tag of project().tags; track tag) {
           <li class="tag">{{ tag }}</li>
         }
       </ul>
@@ -29,16 +29,16 @@
     <!-- Acciones -->
     <div
       class="project-actions"
-      [class.project-actions--digipen]="project.category === 'DigiPen'"
-      [class.project-actions--unir]="project.category === 'UNIR'"
+      [class.project-actions--digipen]="project().category === 'DigiPen'"
+      [class.project-actions--unir]="project().category === 'UNIR'"
     >
       <a
         class="btn btn--primary"
-        [href]="project.link"
+        [href]="project().link"
         target="_blank"
         rel="noopener noreferrer"
       >
-        @if (project.category === 'DigiPen') {
+        @if (project().category === 'DigiPen') {
           <span class="btn-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24" role="presentation">
               <path
@@ -57,14 +57,14 @@
         }
       </a>
 
-      @if (project.release) {
+      @if (project().release) {
         <a
           class="btn btn--secondary"
-          [href]="project.release"
+          [href]="project().release"
           target="_blank"
           rel="noopener noreferrer"
         >
-          @if (project.category === 'DigiPen') {
+          @if (project().category === 'DigiPen') {
             <span class="btn-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" role="presentation">
                 <path

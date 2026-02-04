@@ -4,7 +4,7 @@ export interface ICourse {
   description: string;
 }
 
-export interface ICoursesDigipen {
+export interface ICategory {
   id: number;
   title: string;
   courses: ICourse[];
