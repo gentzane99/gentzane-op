@@ -2,6 +2,27 @@
   padding: calc(var(--header-height) + 24px) 24px 64px;
 }
 
+.educationIntro {
+  max-width: var(--container);
+  margin: 0 auto 24px;
+}
+
+.educationTitle {
+  margin: 0 0 10px;
+  font-size: 64px;
+  font-weight: 750;
+  letter-spacing: -0.02em;
+  color: var(--accent);
+}
+
+.educationSubtitle {
+  margin: 0;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.6;
+  max-width: 70ch;
+}
+
 .state {
   max-width: var(--container);
   margin: 40px auto 0;
@@ -18,7 +39,7 @@
   background: linear-gradient(180deg, rgba(255, 79, 163, 0.12), transparent);
 }
 
-.digipenConainer {
+.digipenContainer {
   max-width: var(--container);
   margin: 0 auto;
   padding: 28px 28px 36px;
@@ -30,6 +51,42 @@
   box-shadow:
     0 24px 60px rgba(0, 0, 0, 0.45),
     inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.unirContainer {
+  max-width: var(--container);
+  margin: 32px auto 0;
+  padding: 28px 28px 36px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 18px;
+  row-gap: 16px;
+  background:
+    radial-gradient(1200px 500px at 110% -20%, rgba(255, 255, 255, 0.04), transparent),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent),
+    var(--surface);
+  border: 1px solid var(--border);
+  border-radius: calc(var(--radius) + 4px);
+  box-shadow:
+    0 24px 60px rgba(0, 0, 0, 0.45),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.unirHeader {
+  display: block;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.2px;
+  margin-bottom: 8px;
+  grid-column: 1 / -1;
+}
+
+.unirMasterInfo {
+  margin: 0 0 22px;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.5;
+  grid-column: 1 / -1;
 }
 
 .digipenHeader {
@@ -47,16 +104,37 @@
   line-height: 1.5;
 }
 
+.digipenDivider {
+  height: 1px;
+  width: 100%;
+  background: var(--border);
+  margin: 16px 0;
+  opacity: 0.8;
+}
+
 @media (max-width: 720px) {
   .educationPage {
     padding: calc(var(--header-height) + 16px) 16px 48px;
   }
 
-  .digipenConainer {
+  .educationTitle {
+    font-size: 38px;
+  }
+
+  .digipenContainer {
     padding: 22px 18px 28px;
   }
 
+  .unirContainer {
+    padding: 22px 18px 28px;
+    grid-template-columns: 1fr;
+  }
+
   .digipenHeader {
+    font-size: 22px;
+  }
+
+  .unirHeader {
     font-size: 22px;
   }
 }

@@ -160,3 +160,20 @@
     font-size: 1.6rem;
   }
 }
+
+@media (max-width: 520px) {
+  .projects-page {
+    gap: 2.5rem;
+    padding: 1.2rem 0.85rem;
+  }
+
+  .section-title {
+    font-size: 1.35rem;
+  }
+
+  .cards-grid,
+  .cards-grid--two {
+    grid-template-columns: 1fr;
+    gap: 1.4rem;
+  }
+}

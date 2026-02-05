@@ -1,0 +1,82 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 0;
+  background: none;
+  border: 0;
+  box-shadow: none;
+}
+
+.unirCourseTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 16px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  color: var(--text);
+  text-align: left;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  cursor: pointer;
+  border-radius: 12px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03);
+  transition: background-color 150ms ease, color 150ms ease, border-color 150ms ease;
+}
+
+.unirCourseTitle:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 12px;
+}
+
+:host:hover .unirCourseTitle {
+  background: var(--accent);
+  border-color: rgba(255, 79, 163, 0.65);
+  color: #0b0b0e;
+}
+
+.titleText {
+  flex: 1;
+}
+
+.unirCourseInfo {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.45;
+  padding: 12px 14px;
+  background: rgba(255, 79, 163, 0.08);
+  border: 1px solid var(--border);
+  border-left: 2px solid var(--accent);
+  border-radius: 10px;
+  display: grid;
+  gap: 12px;
+}
+
+.summary {
+  margin: 0;
+}
+
+.topics {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  color: var(--muted);
+}
+
+.topicPill {
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(255, 143, 199, 0.16);
+  border: 1px solid rgba(255, 143, 199, 0.45);
+  color: #ffd6ea;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.1;
+}

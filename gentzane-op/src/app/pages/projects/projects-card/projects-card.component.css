@@ -163,3 +163,28 @@
   border-color: rgba(255, 79, 163, 0.75);
   color: #ffd6ea;
 }
+
+@media (max-width: 520px) {
+  .project-content {
+    padding: 1.05rem;
+  }
+
+  .project-title {
+    font-size: 1.05rem;
+  }
+
+  .project-description {
+    font-size: 0.95rem;
+  }
+
+  .project-actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.6rem;
+  }
+
+  .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}

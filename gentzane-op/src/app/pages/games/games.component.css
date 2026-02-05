@@ -38,6 +38,20 @@
   }
 }
 
+@media (max-width: 720px) {
+  .gamesPage {
+    padding: 48px 16px;
+  }
+
+  .gamesHeader {
+    margin-bottom: 32px;
+  }
+
+  .gamesTitle {
+    font-size: 34px;
+  }
+}
+
 /* States */
 .state {
   padding: 48px 0;

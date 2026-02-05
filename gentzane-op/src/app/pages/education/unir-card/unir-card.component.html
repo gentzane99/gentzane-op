@@ -1,0 +1,13 @@
+<button class="unirCourseTitle" type="button" (click)="toggleDescription()" [attr.aria-expanded]="isOpen()" [attr.aria-controls]="'unir-course-' + modules().id">
+  <span class="titleText">{{modules().title}}</span>
+</button>
+@if (isOpen()) {
+  <div class="unirCourseInfo" [id]="'unir-course-' + modules().id">
+    <p class="summary">{{modules().summary}}</p>
+    <ul class="topics">
+      @for (topic of modules().topics; track topic) {
+        <li class="topicPill">{{topic}}</li>
+      }
+    </ul>
+  </div>
+}

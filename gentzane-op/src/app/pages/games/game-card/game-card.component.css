@@ -182,3 +182,18 @@
   }
 }
 
+@media (max-width: 420px) {
+  .gameData {
+    padding: 18px 16px 16px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .link {
+    font-size: 11px;
+    letter-spacing: 0.12em;
+  }
+}
+
