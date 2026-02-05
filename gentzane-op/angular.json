@@ -21,6 +21,7 @@
             "tsConfig": "tsconfig.app.json",
             "polyfills": ["src/polyfills.ts"],
             "assets": [
+                "public/google52b5bdb83023f36b.html",
               {
                 "glob": "**/*",
                 "input": "public",
