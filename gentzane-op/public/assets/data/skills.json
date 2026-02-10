@@ -1,0 +1,41 @@
+{
+  "technical": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Angular",
+    "Node",
+    "Express",
+    "MySQL",
+    "MongoDB",
+    "C / C++",
+    "C#",
+    "Python",
+    "Java",
+    "Unreal Engine",
+    "Unity",
+    "Visual Studio",
+    "Git"
+  ],
+  "soft": [
+    "Aprendizaje",
+    "Colaboración",
+    "Comunicación",
+    "Organización",
+    "Iniciativa"
+  ],
+  "languages": [
+    {
+      "name": "Español",
+      "level": "Nativo"
+    },
+    {
+      "name": "Inglés",
+      "level": "Avanzado"
+    },
+    {
+      "name": "Euskera",
+      "level": "Intermedio"
+    }
+  ]
+}

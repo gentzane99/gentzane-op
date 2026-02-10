@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;600&display=swap');
+
+:host {
+  display: block;
+}
+
+.skills-wip {
+  position: relative;
+  min-height: calc(100vh - var(--header-height));
+  padding: 76px 20px 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at top, rgba(45, 212, 191, 0.15), transparent 55%),
+    radial-gradient(circle at 80% 20%, rgba(255, 184, 77, 0.12), transparent 45%),
+    linear-gradient(160deg, #0a0c13 0%, #101521 55%, #0b0f16 100%);
+  font-family: 'Space Grotesk', 'Sora', 'Manrope', sans-serif;
+}
+
+.wip-glow {
+  position: absolute;
+  width: 520px;
+  height: 520px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 107, 107, 0.25), transparent 65%);
+  filter: blur(8px);
+  top: -140px;
+  right: -120px;
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+.wip-shell {
+  position: relative;
+  width: min(980px, 100%);
+  background: rgba(10, 12, 18, 0.78);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 28px;
+  padding: 48px 46px 42px;
+  box-shadow:
+    0 24px 80px rgba(0, 0, 0, 0.45),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.02);
+  animation: fade-up 700ms ease;
+}
+
+.wip-header {
+  display: grid;
+  gap: 16px;
+  margin-bottom: 34px;
+}
+
+.wip-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: rgba(45, 212, 191, 0.16);
+  color: #9ff0e1;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1.6px;
+  width: fit-content;
+}
+
+.wip-header h1 {
+  margin: 0;
+  font-size: clamp(32px, 5vw, 54px);
+  font-weight: 600;
+  font-family: 'Fraunces', 'Space Grotesk', serif;
+}
+
+.wip-header p {
+  margin: 0;
+  max-width: 620px;
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+.wip-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+  margin-bottom: 36px;
+}
+
+.wip-card {
+  padding: 22px 20px 20px;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(15, 20, 32, 0.7);
+  display: grid;
+  gap: 12px;
+  min-height: 140px;
+  animation: float-in 700ms ease forwards;
+  opacity: 0;
+}
+
+.wip-card:nth-child(1) {
+  animation-delay: 120ms;
+}
+
+.wip-card:nth-child(2) {
+  animation-delay: 220ms;
+}
+
+.wip-card:nth-child(3) {
+  animation-delay: 320ms;
+}
+
+.wip-card h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.wip-card p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.wip-chip {
+  display: inline-flex;
+  width: fit-content;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(255, 184, 77, 0.18);
+  color: #ffd08a;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.wip-progress {
+  display: grid;
+  gap: 12px;
+  padding-top: 6px;
+}
+
+.progress-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.progress-bar {
+  position: relative;
+  width: 100%;
+  height: 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+}
+
+.progress-bar span {
+  position: absolute;
+  inset: 0;
+  width: 0;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #2dd4bf 0%, #ffb84d 55%, #ff6b6b 100%);
+  box-shadow: 0 0 18px rgba(45, 212, 191, 0.45);
+  animation: progress-fill 900ms ease forwards 300ms;
+}
+
+.progress-note {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float-in {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes progress-fill {
+  from {
+    width: 0;
+  }
+  to {
+    width: var(--progress, 100%);
+  }
+}
+
+@media (max-width: 720px) {
+  .wip-shell {
+    padding: 34px 24px 30px;
+  }
+
+  .progress-meta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
