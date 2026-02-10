@@ -1,0 +1,31 @@
+<main class="skillsPage">
+    <div class="skillsHero">
+        <header class="skillsHeader">Habilidades</header>
+        <p class="skillsIntro">Una vista rapida de mis capacidades tecnicas, habilidades blandas y los idiomas que manejo a nivel profesional.</p>
+    </div>
+    <section class="techincalContainer">
+        <header class="technicalHeader">Habilidades técnicas</header>
+        <div class="skillsList">
+            @for (tech of techSkills; track tech) {
+                <span class="techSkill">{{tech}}</span>
+            }
+        </div>
+    </section>
+    <section class="softContainer">
+        <header class="softHeader">Habilidades blandas</header>
+        <div class="skillsList">
+            @for (soft of softSkills; track soft) {
+                <span class="softSkills">{{soft}}</span>
+            }
+        </div>
+    </section>
+    <section class="languagesContainer">
+        <header class="langHeader">Idiomas</header>
+        @for (lang of languages; track lang) {
+            <div class="langContainer">
+                <span class="name">{{lang.name}}</span>
+                <span class="level">{{lang.level}}</span>
+            </div>
+        }
+    </section>
+</main>

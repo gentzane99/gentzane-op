@@ -1,39 +1,95 @@
-.wip {
-  min-height: 70vh;
-  display: grid;
-  place-content: center;
-  gap: 12px;
-  text-align: center;
-  padding: 48px 20px;
+:host {
+  display: block;
 }
 
-.wip__badge {
-  display: inline-block;
-  width: fit-content;
+.contactPage {
+  min-height: calc(100vh - var(--header-height));
+  padding: 72px 24px 96px;
+  max-width: var(--container);
   margin: 0 auto;
-  padding: 6px 12px;
-  border-radius: 999px;
-  border: 1px solid #c9c9c9;
-  letter-spacing: 0.08em;
-  font-size: 12px;
-  text-transform: uppercase;
+  display: grid;
+  gap: 28px;
+  color: var(--text);
+  font-family: var(--font);
 }
 
-.wip__title {
+.contactHero {
+  display: grid;
+  gap: 10px;
+}
+
+.contactEyebrow {
+  font-size: 12px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.contactTitle {
   margin: 0;
-  font-size: clamp(28px, 7vw, 40px);
+  font-size: clamp(40px, 5vw, 64px);
   font-weight: 700;
 }
 
-.wip__text {
+.contactIntro {
   margin: 0;
-  font-size: 16px;
+  max-width: 60ch;
   color: var(--muted);
-  max-width: 46ch;
+  line-height: 1.6;
 }
 
-@media (max-width: 520px) {
-  .wip {
-    padding: 36px 16px;
+.contactGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.contactCard {
+  display: grid;
+  gap: 12px;
+  padding: 22px 20px;
+  border-radius: 16px;
+  background: #0f0f0f;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+}
+
+.contactCard:hover {
+  border-color: rgba(255, 79, 163, 0.9);
+  box-shadow:
+    0 0 0 1px rgba(255, 79, 163, 0.55),
+    0 6px 18px rgba(255, 79, 163, 0.2);
+  transform: translateY(-2px);
+}
+
+.contactIcon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  background: rgba(255, 79, 163, 0.16);
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+}
+
+.contactLabel {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.contactValue {
+  font-size: 14px;
+  color: var(--muted);
+  word-break: break-word;
+}
+
+@media (max-width: 720px) {
+  .contactPage {
+    padding: 48px 20px 64px;
   }
 }
