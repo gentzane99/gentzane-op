@@ -1,11 +1,10 @@
-.digiPenCategory {
+﻿.digiPenCategory {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 12px;
   margin: 20px 0 12px;
   font-weight: 700;
-  font-size: 18px;
   color: var(--text);
   background: none;
   border: 0;

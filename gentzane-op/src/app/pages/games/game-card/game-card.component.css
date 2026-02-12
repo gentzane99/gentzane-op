@@ -1,4 +1,4 @@
-/* Card wrapper */
+﻿/* Card wrapper */
 .gameContainer {
   height: 100%;
   border-radius: calc(var(--radius) + 4px);
@@ -51,7 +51,6 @@
 
 /* Date (small accent) */
 .date {
-  font-size: 12px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--accent);
@@ -61,7 +60,6 @@
 /* Title */
 .title {
   margin: 0;
-  font-size: 34px;
   line-height: 1.05;
   letter-spacing: -0.02em;
   font-weight: 800;
@@ -70,7 +68,6 @@
 
 /* Role */
 .role {
-  font-size: 14px;
   font-style: italic;
   color: color-mix(in srgb, var(--muted) 80%, var(--accent) 20%);
 }
@@ -78,7 +75,6 @@
 /* Description */
 .description {
   margin: 6px 0 0;
-  font-size: 14px;
   line-height: 1.6;
   color: var(--muted);
   max-width: 62ch;
@@ -102,7 +98,6 @@
 
 .tag {
   padding: 6px 10px;
-  font-size: 12px;
   line-height: 1;
   border-radius: 999px;
 
@@ -126,14 +121,12 @@
 }
 
 .nominations {
-  font-size: 12px;
   line-height: 1.45;
   color: var(--muted);
 }
 
 .nominationsContainer::before {
   content: "Nominaciones";
-  font-size: 11px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--accent);
@@ -151,7 +144,6 @@
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.16em;
-  font-size: 12px;
   font-weight: 700;
 
   color: var(--accent);
@@ -165,8 +157,7 @@
 
 /* External icon without changing HTML */
 .link::after {
-  content: "↗";
-  font-size: 14px;
+  content: "â†—";
   line-height: 1;
   opacity: 0.9;
 }
@@ -177,9 +168,6 @@
     height: 220px;
   }
 
-  .title {
-    font-size: 28px;
-  }
 }
 
 @media (max-width: 420px) {
@@ -187,12 +175,7 @@
     padding: 18px 16px 16px;
   }
 
-  .title {
-    font-size: 24px;
-  }
-
   .link {
-    font-size: 11px;
     letter-spacing: 0.12em;
   }
 }

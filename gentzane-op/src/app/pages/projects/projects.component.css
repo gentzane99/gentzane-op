@@ -1,8 +1,8 @@
-.projects-page {
+﻿.projects-page {
   display: flex;
   flex-direction: column;
   gap: 4rem;
-  padding: 2rem 1.5rem;
+  padding: calc(var(--header-height) + 24px) 24px 64px;
   max-width: var(--container);
   margin: 0 auto;
 }
@@ -18,15 +18,13 @@
 }
 
 .section-title {
-  font-size: 3rem;
   font-weight: 650;
   letter-spacing: -0.02em;
   margin: 0 0 0.5rem 0;
-  color: #ff8fc7;
+  color: var(--accent);
 }
 
 .section-subtitle {
-  font-size: 1rem;
   color: var(--muted);
   line-height: 1.6;
   margin: 0;
@@ -69,7 +67,6 @@
   background: var(--course-bg, var(--accent-soft));
   border: 1px solid var(--course-border, rgba(255, 79, 163, 0.35));
   color: var(--course-text, var(--text));
-  font-size: 0.85rem;
   font-weight: 600;
 }
 
@@ -78,40 +75,14 @@
   border-radius: 999px;
   background: var(--course-bg, rgba(255, 79, 163, 0.18));
   border: 1px solid var(--course-border, rgba(255, 79, 163, 0.45));
-  color: var(--course-text, #ffd6ea);
-  font-size: 0.78rem;
+  color: var(--course-text, var(--text));
   font-weight: 700;
   letter-spacing: 0.02em;
 }
 
 .course-name {
-  font-size: 0.95rem;
   color: var(--text);
   font-weight: 600;
-}
-
-.group-block:nth-of-type(4n + 1) {
-  --course-bg: rgba(56, 189, 248, 0.18);
-  --course-border: rgba(56, 189, 248, 0.55);
-  --course-text: #dff6ff;
-}
-
-.group-block:nth-of-type(4n + 2) {
-  --course-bg: rgba(16, 185, 129, 0.18);
-  --course-border: rgba(16, 185, 129, 0.55);
-  --course-text: #dcfce7;
-}
-
-.group-block:nth-of-type(4n + 3) {
-  --course-bg: rgba(245, 158, 11, 0.18);
-  --course-border: rgba(245, 158, 11, 0.55);
-  --course-text: #fff2cc;
-}
-
-.group-block:nth-of-type(4n) {
-  --course-bg: rgba(99, 102, 241, 0.18);
-  --course-border: rgba(99, 102, 241, 0.55);
-  --course-text: #e0e7ff;
 }
 
 .cards-grid {
@@ -126,7 +97,6 @@
 }
 
 .empty {
-  font-size: 0.95rem;
   color: var(--muted);
   font-style: italic;
   margin: 0.5rem 0 0;
@@ -153,22 +123,15 @@
 /* Responsive */
 @media (max-width: 768px) {
   .projects-page {
-    padding: 1.5rem 1rem;
+    padding: calc(var(--header-height) + 16px) 16px 56px;
   }
 
-  .section-title {
-    font-size: 1.6rem;
-  }
 }
 
 @media (max-width: 520px) {
   .projects-page {
     gap: 2.5rem;
-    padding: 1.2rem 0.85rem;
-  }
-
-  .section-title {
-    font-size: 1.35rem;
+    padding: calc(var(--header-height) + 16px) 14px 48px;
   }
 
   .cards-grid,

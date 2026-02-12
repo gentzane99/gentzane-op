@@ -1,4 +1,4 @@
-.project-card {
+﻿.project-card {
   display: flex;
   flex-direction: column;
   background: var(--surface);
@@ -41,14 +41,12 @@
 }
 
 .project-title {
-  font-size: 1.25rem;
   font-weight: 650;
   letter-spacing: -0.01em;
   margin: 0;
 }
 
 .project-description {
-  font-size: 1.02rem;
   color: var(--muted);
   line-height: 1.55;
   margin: 0;
@@ -69,8 +67,7 @@
   border-radius: 6px;
   background: rgba(255, 255, 255, 0.02);
   border: 1px solid rgba(255, 79, 163, 0.45);
-  color: #ff8fc7;
-  font-size: 0.82rem;
+  color: var(--accent);
   font-weight: 650;
   letter-spacing: 0.01em;
 }
@@ -99,7 +96,7 @@
 .project-actions--digipen .btn:hover,
 .project-actions--unir .btn:hover {
   background: transparent;
-  color: #ffd6ea;
+  color: var(--text);
   border-bottom-color: rgba(255, 79, 163, 0.85);
 }
 
@@ -123,14 +120,13 @@
   justify-content: center;
   padding: 0.5rem 1.05rem;
   border-radius: 999px;
-  font-size: 0.82rem;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   text-decoration: none;
   cursor: pointer;
   border: 1px solid rgba(255, 79, 163, 0.5);
-  color: #ff8fc7;
+  color: var(--accent);
   background: rgba(255, 79, 163, 0.06);
   transition: transform 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
 }
@@ -142,26 +138,26 @@
 /* Primary */
 .btn--primary {
   background: rgba(255, 79, 163, 0.08);
-  color: #ff8fc7;
+  color: var(--accent);
 }
 
 .btn--primary:hover {
   background: rgba(255, 79, 163, 0.18);
   border-color: rgba(255, 79, 163, 0.75);
-  color: #ffd6ea;
+  color: var(--text);
 }
 
 /* Secondary */
 .btn--secondary {
   background: rgba(255, 79, 163, 0.04);
-  color: #ff8fc7;
+  color: var(--accent);
   border-color: rgba(255, 79, 163, 0.45);
 }
 
 .btn--secondary:hover {
   background: rgba(255, 79, 163, 0.16);
   border-color: rgba(255, 79, 163, 0.75);
-  color: #ffd6ea;
+  color: var(--text);
 }
 
 @media (max-width: 520px) {
@@ -170,11 +166,9 @@
   }
 
   .project-title {
-    font-size: 1.05rem;
   }
 
   .project-description {
-    font-size: 0.95rem;
   }
 
   .project-actions {

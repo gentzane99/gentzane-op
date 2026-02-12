@@ -1,7 +1,7 @@
-.gamesPage {
+﻿.gamesPage {
   max-width: var(--container);
   margin: 0 auto;
-  padding: 72px 24px;
+  padding: calc(var(--header-height) + 24px) 24px 72px;
 }
 
 .gamesHeader {
@@ -13,7 +13,6 @@
   display: inline-block;
   margin-bottom: 16px;
 
-  font-size: 50px;
   font-weight: 700;
   text-transform: uppercase;
   color: var(--accent);
@@ -21,7 +20,6 @@
 
 .gamesInfo {
   margin: 0;
-  font-size: 16px;
   line-height: 1.6;
   color: var(--muted);
 }
@@ -40,16 +38,13 @@
 
 @media (max-width: 720px) {
   .gamesPage {
-    padding: 48px 16px;
+    padding: calc(var(--header-height) + 16px) 16px 48px;
   }
 
   .gamesHeader {
     margin-bottom: 32px;
   }
 
-  .gamesTitle {
-    font-size: 34px;
-  }
 }
 
 /* States */

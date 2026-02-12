@@ -1,4 +1,4 @@
-:host {
+﻿:host {
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -19,7 +19,6 @@
   color: var(--text);
   text-align: left;
   font-weight: 600;
-  font-size: 14px;
   letter-spacing: 0.2px;
   cursor: pointer;
   border-radius: 12px;
@@ -36,7 +35,7 @@
 :host:hover .unirCourseTitle {
   background: var(--accent);
   border-color: rgba(255, 79, 163, 0.65);
-  color: #0b0b0e;
+  color: var(--bg);
 }
 
 .titleText {
@@ -45,7 +44,6 @@
 
 .unirCourseInfo {
   color: var(--muted);
-  font-size: 13px;
   line-height: 1.45;
   padding: 12px 14px;
   background: rgba(255, 79, 163, 0.08);
@@ -75,8 +73,7 @@
   border-radius: 999px;
   background: rgba(255, 143, 199, 0.16);
   border: 1px solid rgba(255, 143, 199, 0.45);
-  color: #ffd6ea;
-  font-size: 12px;
+  color: var(--text);
   font-weight: 600;
   line-height: 1.1;
 }

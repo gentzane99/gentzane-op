@@ -18,7 +18,7 @@
 
 .header-title{
   margin: 0;
-  font-size: 30px;
+  font-size: 2em;
   font-weight: 600;
   letter-spacing: 0.2px;
   white-space: nowrap;
@@ -37,7 +37,6 @@
   position: relative;
   display: inline-block;
   padding: 6px 2px;
-  font-size: 15px;
   font-weight: 500;
   color: var(--muted);
   transition: color 160ms ease, opacity 160ms ease;
@@ -79,12 +78,10 @@
     gap: 16px;
   }
 
-  .header-title{
-    font-size: 24px;
-  }
-
   .nav-list{
     width: 100%;
     gap: 10px 14px;
   }
 }
+
+

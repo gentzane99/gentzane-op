@@ -1,5 +1,4 @@
 <main class="educationPage">
-
     @if(loading){
         <div class="state">Cargando juegos...</div>
     } @else if (error){
@@ -10,9 +9,10 @@
         <p class="educationSubtitle">Formación académica en desarrollo de videojuegos y en master de Full Stack.</p>
     </header>
     <section class="digipenContainer">
-        <header class="digipenHeader"> DigiPen Institute of Technology Europe - Bilbao </header>
-        <p class="rtisInfo"> Grado en Ingeniería Informática en Simulación Interactiva en Tiempo Real</p>
-
+        <header class="header">
+            <h2 class="digipenHeader"> DigiPen Institute of Technology Europe - Bilbao </h2>
+            <p class="rtisInfo"> Grado en Ingeniería Informática en Simulación Interactiva en Tiempo Real</p>
+        </header>
         @for (cat of digipenCourses; track cat; let i = $index) {
             @if (i > 0) {
                 <div class="digipenDivider" aria-hidden="true"></div>
@@ -21,8 +21,10 @@
         }
     </section>
     <section class="unirContainer">
-        <header class="unirHeader">UNIR - Universidad Internacional de La Rioja</header>
-        <p class="unirMasterInfo">Máster de Formación Permanente en Full Stack Developer</p>
+        <header class="header">
+            <h2 class="unirHeader">UNIR - Universidad Internacional de La Rioja</h2>
+            <p class="unirMasterInfo">Máster de Formación Permanente en Full Stack Developer</p>
+        </header>
         @for (mod of unirCourses; track mod) {
             <app-unir-card [modules]="mod"></app-unir-card>
         }

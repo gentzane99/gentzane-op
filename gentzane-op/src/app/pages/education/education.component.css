@@ -1,4 +1,4 @@
-.educationPage {
+﻿.educationPage {
   padding: calc(var(--header-height) + 24px) 24px 64px;
 }
 
@@ -9,7 +9,6 @@
 
 .educationTitle {
   margin: 0 0 10px;
-  font-size: 64px;
   font-weight: 750;
   letter-spacing: -0.02em;
   color: var(--accent);
@@ -18,7 +17,6 @@
 .educationSubtitle {
   margin: 0;
   color: var(--muted);
-  font-size: 16px;
   line-height: 1.6;
   max-width: 70ch;
 }
@@ -53,6 +51,11 @@
     inset 0 1px 0 rgba(255, 255, 255, 0.04);
 }
 
+.digipenContainer > .header {
+  display: block;
+  margin-bottom: 8px;
+}
+
 .unirContainer {
   max-width: var(--container);
   margin: 32px auto 0;
@@ -72,35 +75,35 @@
     inset 0 1px 0 rgba(255, 255, 255, 0.04);
 }
 
+.unirContainer > .header {
+  grid-column: 1 / -1;
+  display: block;
+  margin-bottom: 4px;
+}
+
 .unirHeader {
   display: block;
-  font-size: 28px;
   font-weight: 700;
   letter-spacing: -0.2px;
-  margin-bottom: 8px;
-  grid-column: 1 / -1;
+  margin: 0 0 8px;
 }
 
 .unirMasterInfo {
-  margin: 0 0 22px;
+  margin: 0;
   color: var(--muted);
-  font-size: 15px;
   line-height: 1.5;
-  grid-column: 1 / -1;
 }
 
 .digipenHeader {
   display: block;
-  font-size: 28px;
   font-weight: 700;
   letter-spacing: -0.2px;
-  margin-bottom: 8px;
+  margin: 0 0 8px;
 }
 
 .rtisInfo {
-  margin: 0 0 18px;
+  margin: 0;
   color: var(--muted);
-  font-size: 15px;
   line-height: 1.5;
 }
 
@@ -117,10 +120,6 @@
     padding: calc(var(--header-height) + 16px) 16px 48px;
   }
 
-  .educationTitle {
-    font-size: 38px;
-  }
-
   .digipenContainer {
     padding: 22px 18px 28px;
   }
@@ -130,11 +129,9 @@
     grid-template-columns: 1fr;
   }
 
-  .digipenHeader {
-    font-size: 22px;
+  .digipenContainer > .header,
+  .unirContainer > .header {
+    margin-bottom: 10px;
   }
 
-  .unirHeader {
-    font-size: 22px;
-  }
 }

@@ -1,10 +1,10 @@
-.wip {
+﻿.wip {
   min-height: 70vh;
   display: grid;
   place-content: center;
   gap: 12px;
   text-align: center;
-  padding: 48px 20px;
+  padding: calc(var(--header-height) + 24px) 20px 48px;
 }
 
 .wip__badge {
@@ -13,27 +13,24 @@
   margin: 0 auto;
   padding: 6px 12px;
   border-radius: 999px;
-  border: 1px solid #c9c9c9;
+  border: 1px solid var(--border);
   letter-spacing: 0.08em;
-  font-size: 12px;
   text-transform: uppercase;
 }
 
 .wip__title {
   margin: 0;
-  font-size: clamp(28px, 7vw, 40px);
   font-weight: 700;
 }
 
 .wip__text {
   margin: 0;
-  font-size: 16px;
   color: var(--muted);
   max-width: 46ch;
 }
 
 @media (max-width: 520px) {
   .wip {
-    padding: 36px 16px;
+    padding: calc(var(--header-height) + 16px) 16px 36px;
   }
 }
