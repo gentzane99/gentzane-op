@@ -157,7 +157,7 @@
 
 /* External icon without changing HTML */
 .link::after {
-  content: "â†—";
+  content: "\2197";
   line-height: 1;
   opacity: 0.9;
 }
