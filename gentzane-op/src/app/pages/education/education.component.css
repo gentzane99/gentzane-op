@@ -1,23 +1,13 @@
-﻿.educationPage {
-  padding: calc(var(--header-height) + 24px) 24px 64px;
-}
-
-.educationIntro {
+﻿.educationIntro {
   max-width: var(--container);
   margin: 0 auto 24px;
 }
 
 .educationTitle {
-  margin: 0 0 10px;
   font-weight: 750;
-  letter-spacing: -0.02em;
-  color: var(--accent);
 }
 
 .educationSubtitle {
-  margin: 0;
-  color: var(--muted);
-  line-height: 1.6;
   max-width: 70ch;
 }
 
@@ -116,10 +106,6 @@
 }
 
 @media (max-width: 720px) {
-  .educationPage {
-    padding: calc(var(--header-height) + 16px) 16px 48px;
-  }
-
   .digipenContainer {
     padding: 22px 18px 28px;
   }

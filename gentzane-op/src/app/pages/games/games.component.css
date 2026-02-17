@@ -1,27 +1,13 @@
-﻿.gamesPage {
-  max-width: var(--container);
-  margin: 0 auto;
-  padding: calc(var(--header-height) + 24px) 24px 72px;
-}
-
-.gamesHeader {
+﻿.gamesHeader {
   max-width: 620px;
-  margin-bottom: 48px;
+  margin: 0 0 48px;
+  padding: 0;
 }
 
 .gamesTitle {
-  display: inline-block;
-  margin-bottom: 16px;
-
+  display: block;
   font-weight: 700;
   text-transform: uppercase;
-  color: var(--accent);
-}
-
-.gamesInfo {
-  margin: 0;
-  line-height: 1.6;
-  color: var(--muted);
 }
 
 .gamesContainer {
@@ -37,10 +23,6 @@
 }
 
 @media (max-width: 720px) {
-  .gamesPage {
-    padding: calc(var(--header-height) + 16px) 16px 48px;
-  }
-
   .gamesHeader {
     margin-bottom: 32px;
   }

@@ -12,6 +12,10 @@
   --accent-soft: rgba(255, 79, 163, 0.18);
 
   --container: 1120px;
+  --page-pad-top: calc(var(--header-height) + 24px);
+  --page-pad-x: 24px;
+  --page-pad-bottom: 64px;
+  --page-title-gap: 14px;
   --radius: 14px;
 
   --header-height: 80px;
@@ -46,5 +50,40 @@ img {
 
 h1 {
   font-size: var(--h1-size);
+}
+
+.page-shell {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: var(--page-pad-top) var(--page-pad-x) var(--page-pad-bottom);
+}
+
+.page-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0;
+}
+
+.page-title {
+  margin: 0 0 var(--page-title-gap);
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: var(--accent);
+}
+
+.page-subtitle {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.6;
+  max-width: 70ch;
+}
+
+@media (max-width: 720px) {
+  .page-shell {
+    --page-pad-top: calc(var(--header-height) + 16px);
+    --page-pad-x: 16px;
+    --page-pad-bottom: 48px;
+  }
 }
 

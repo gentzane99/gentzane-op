@@ -7,10 +7,8 @@
 
 /* Layout principal */
 .mainPage {
-  height: calc(100vh - var(--header-height));
-  height: calc(100dvh - var(--header-height));
-  max-width: var(--container);
-  margin: 0 auto;
+  min-height: calc(100vh - var(--page-pad-top) - var(--page-pad-bottom));
+  min-height: calc(100dvh - var(--page-pad-top) - var(--page-pad-bottom));
   overflow: hidden;
 
   display: flex;
@@ -35,7 +33,7 @@
   color: var(--muted);
 }
 
-/* TÃ­tulo principal */
+/* Titulo principal */
 .textContainer h1 {
   margin: 0 0 24px;
 
@@ -104,10 +102,6 @@
 
 /* Responsive */
 @media (max-width: 900px) {
-  .mainPage {
-    padding: 48px 24px 48px;
-  }
-
   .textContainer p {
     max-width: 100%;
   }
@@ -116,7 +110,6 @@
 @media (max-width: 520px) {
   .mainPage {
     gap: 28px;
-    padding: 36px 16px 40px;
   }
 
   .textContainer h1 {

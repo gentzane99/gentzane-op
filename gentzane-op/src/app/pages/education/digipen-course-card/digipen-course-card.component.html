@@ -1,4 +1,4 @@
-<button class="digipenCourseTitle" type="button" (click)="toggleDescription()" [attr.aria-expanded]="isOpen()">
+<button class="digipenCourseTitle" type="button" (click)="toggleDescription()" [attr.aria-expanded]="isOpen()" [attr.title]="course().code + ' - ' + course().title">
   <span class="titleText">{{course().code}} - {{course().title}}</span>
 </button>
 @if (isOpen()) {
