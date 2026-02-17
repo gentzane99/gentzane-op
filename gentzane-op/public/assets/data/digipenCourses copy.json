@@ -1,0 +1,106 @@
+[
+  {
+    "id": 1,
+    "title": "Computer Science Courses",
+    "courses": [
+      { "code": "CS100", "title": "Computer Environment", "description": "This course provides a detailed examination of the fundamental elements on which computers are based. Topics include number systems and computation, electricity and basic circuits, logic circuits, memory, computer architecture, and operating systems. Operational code and assembly languages are discussed and then implemented on a hardware platform, such as a personal computer or an autonomous vehicle." },
+      { "code": "CS120", "title": "High-Level Programming I: The C Programming Language", "description": "This course serves as a foundation for all high-level programming courses and projects by introducing control flow through statement grouping, decision making, case selection, and procedure iteration as well as basic data types." },
+      { "code": "CS170", "title": "High-Level Programming II: The C++ Programming Language", "description": "This course introduces the C++ language with particular emphasis on its object-oriented features." },
+      { "code": "CS180", "title": "Operating Systems I: Man-Machine Interface", "description": "This course presents an overview of modern operating systems as implemented on personal computers." },
+      { "code": "CS200", "title": "Computer Graphics I", "description": "This course presents fundamental mathematical elements, data structures, and algorithms useful for animating and viewing 2D primitives." },
+      { "code": "CS225", "title": "Advanced C/C++", "description": "This course builds on the foundation created in the first two high-level programming courses and presents advanced topics." },
+      { "code": "CS230", "title": "Game Implementation Techniques", "description": "This course presents game implementation techniques and engine architecture." },
+      { "code": "CS250", "title": "Computer Graphics II", "description": "This course examines the mathematical elements and algorithms used in real-time 3D computer graphics." },
+      { "code": "CS260", "title": "Computer Networks I: Interprocess Communication", "description": "This course introduces hierarchical network communication in a distributed computing environment." },
+      { "code": "CS280", "title": "Data Structures", "description": "This course introduces classical abstract data types and algorithm complexity." },
+      { "code": "CS300", "title": "Advanced Computer Graphics I", "description": "This course introduces algorithms essential to creating photorealistic images in interactive simulations." },
+      { "code": "CS315", "title": "Low-Level Programming", "description": "This course introduces modern microprocessor architectures and assembly languages." },
+      { "code": "CS325", "title": "User Interface and User Experience Design", "description": "This course presents fundamental topics in human-computer interface design." },
+      { "code": "CS330", "title": "Algorithm Analysis", "description": "This course introduces the analysis of algorithms and their efficiency." },
+      { "code": "CS350", "title": "Advanced Computer Graphics II", "description": "This course deals with efficient representation and processing of complex 3D scenes." },
+      { "code": "CS365", "title": "Software Engineering", "description": "This course covers software engineering principles, methodologies, and project management." },
+      { "code": "CS380", "title": "Artificial Intelligence for Games", "description": "This course introduces concepts and algorithms commonly used to solve game AI problems." },
+      { "code": "CS388", "title": "Introduction to Portable Game System Development", "description": "This course introduces students to portable game systems programming." }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Game Project Courses",
+    "courses": [
+      { "code": "GAM100", "title": "Project Introduction", "description": "Basic software development, concept development, and team dynamics." },
+      { "code": "GAM150", "title": "Project I", "description": "Team creation of a simple digital two-dimensional game or simulation." },
+      { "code": "GAM200", "title": "Project II", "description": "Pre-production of a real-time 2D game or simulation." },
+      { "code": "GAM250", "title": "Project II", "description": "Production and completion of the projects begun in GAM 200." },
+      { "code": "GAM300", "title": "Project III", "description": "Pre-production of an advanced real-time game or simulation." },
+      { "code": "GAM350", "title": "Project III", "description": "Production and polishing of the advanced project." },
+      { "code": "GAM400", "title": "Project IV", "description": "Preparation of a professional portfolio." },
+      { "code": "GAM450", "title": "Project IV", "description": "Continuation and completion of the professional portfolio." }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Mathematics Courses",
+    "courses": [
+      { "code": "MAT140", "title": "Linear Algebra and Geometry", "description": "Vector geometry and linear transformations with applications to graphics." },
+      { "code": "MAT150", "title": "Calculus and Analytic Geometry I", "description": "Limits, differentiation, and integration of single-variable functions." },
+      { "code": "MAT200", "title": "Calculus and Analytic Geometry II", "description": "Advanced integration techniques and series." },
+      { "code": "MAT250", "title": "Linear Algebra", "description": "Foundations of linear algebra and vector spaces." },
+      { "code": "MAT256", "title": "Introduction to Differential Equations", "description": "First and second-order linear differential equations." },
+      { "code": "MAT258", "title": "Discrete Mathematics", "description": "Logic, proofs, set theory, combinatorics, and graph theory." },
+      { "code": "MAT300", "title": "Curves and Surfaces", "description": "Parameterized polynomial curves and surfaces for computer graphics." }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Physics Courses",
+    "courses": [
+      { "code": "PHY200", "title": "Motion Dynamics", "description": "Fundamental principles of mechanics and motion." },
+      { "code": "PHY200L", "title": "Motion Dynamics Laboratory", "description": "Laboratory experiments related to motion dynamics." },
+      { "code": "PHY250", "title": "Waves, Optics, and Thermodynamics", "description": "Fluid dynamics, waves, optics, and thermodynamics." }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Computer Graphics Courses",
+    "courses": [
+      { "code": "CG130", "title": "3D Computer Animation Production I", "description": "Basic theories and techniques of 3D computer animation." }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Art Courses",
+    "courses": [
+      { "code": "ART105", "title": "Art Processes", "description": "Foundational processes used in making art." }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "College Success Courses",
+    "courses": [
+      { "code": "COL499", "title": "Career Search Preparation", "description": "Preparation of application materials and job search strategy." }
+    ]
+  },
+  {
+    "id": 8,
+    "title": "English Courses",
+    "courses": [
+      { "code": "ENG110", "title": "Composition", "description": "Development of writing and critical thinking skills." },
+      { "code": "ENG116", "title": "Storytelling", "description": "Principal elements of storytelling across media." },
+      { "code": "ENG399", "title": "Special Topics in English", "description": "Variable content based on faculty and student interest." }
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Communications Courses",
+    "courses": [
+      { "code": "COM150", "title": "Interpersonal and Work Communication", "description": "Introduction to interpersonal and professional communication." }
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Social Science Courses",
+    "courses": [
+      { "code": "SOS115", "title": "Media and Ethics", "description": "Ethical assessment of media and social decision-making." }
+    ]
+  }
+]

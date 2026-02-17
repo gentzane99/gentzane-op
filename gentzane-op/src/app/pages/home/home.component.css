@@ -7,9 +7,11 @@
 
 /* Layout principal */
 .mainPage {
-  min-height: calc(100vh - var(--header-height));
+  height: calc(100vh - var(--header-height));
+  height: calc(100dvh - var(--header-height));
   max-width: var(--container);
   margin: 0 auto;
+  overflow: hidden;
 
   display: flex;
   flex-direction: column;
@@ -40,6 +42,7 @@
   font-weight: 800;
   line-height: 0.96;
   letter-spacing: -0.02em;
+  color: var(--accent);
 }
 
 /* Texto descriptivo */
