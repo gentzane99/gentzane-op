@@ -165,12 +165,6 @@
     padding: 1.05rem;
   }
 
-  .project-title {
-  }
-
-  .project-description {
-  }
-
   .project-actions {
     flex-direction: column;
     align-items: stretch;

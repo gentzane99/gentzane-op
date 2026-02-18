@@ -53,13 +53,13 @@
   color: var(--muted);
 }
 
-/* Contenedor del botÃ³n */
+/* Contenedor del boton */
 .buttonContainer {
   display: flex;
   align-items: center;
 }
 
-/* BotÃ³n de contacto / perfil */
+/* Boton de contacto / perfil */
 .contactButton {
   display: inline-flex;
   align-items: center;
