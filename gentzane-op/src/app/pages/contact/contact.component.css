@@ -21,11 +21,11 @@
 
 .contactGrid {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   gap: 22px;
   overflow-x: visible;
   padding: 0;
-  align-items: start;
+  align-items: flex-start;
   justify-content: flex-start;
 }
 
@@ -41,10 +41,10 @@
   border: 1px solid rgba(255, 255, 255, 0.08);
   text-decoration: none;
   color: inherit;
-  flex: 0 0 270px;
-  max-width: 270px;
-  height: auto;
-  min-height: 220px;
+  flex: 0 1 calc((100% - 66px) / 4);
+  width: 100%;
+  max-width: calc((100% - 66px) / 4);
+  min-height: 210px;
   transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
 }
 
@@ -82,3 +82,52 @@
   margin: 0;
 }
 
+@media (max-width: 900px) {
+  .contactHero {
+    align-items: center;
+    text-align: center;
+  }
+
+  .contactIntro {
+    margin-inline: auto;
+  }
+
+  .contactGrid {
+    justify-content: center;
+  }
+
+  .contactCard {
+    flex-basis: calc(50% - 11px);
+    max-width: calc(50% - 11px);
+  }
+}
+
+@media (max-width: 520px) {
+  .contactPage {
+    gap: 22px;
+  }
+
+  .contactGrid {
+    gap: 14px;
+  }
+
+  .contactCard {
+    flex-basis: min(100%, 420px);
+    max-width: 420px;
+    min-height: 190px;
+    padding: 20px 16px;
+  }
+
+  .contactIcon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .contactLabel {
+    font-size: 1rem;
+  }
+
+  .contactValue {
+    font-size: 0.95rem;
+  }
+}

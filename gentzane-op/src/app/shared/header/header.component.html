@@ -1,16 +1,30 @@
-<header class="page-header">
+﻿<header class="page-header">
     <div class="header-container">
-    <h1 class="header-title">Gentzane Pastor Oleagoitia</h1>
-        <nav class="header-nav">
+        <h1 class="header-title">Gentzane Pastor Oleagoitia</h1>
+
+        <button
+            class="menu-toggle"
+            type="button"
+            (click)="toggleMobileMenu()"
+            [attr.aria-expanded]="isMobileMenuOpen"
+            aria-controls="main-navigation"
+            aria-label="Abrir menu de navegacion"
+        >
+            <span class="menu-toggle-line"></span>
+            <span class="menu-toggle-line"></span>
+            <span class="menu-toggle-line"></span>
+        </button>
+
+        <nav id="main-navigation" class="header-nav" [class.open]="isMobileMenuOpen">
             <ul class="nav-list">
-                <li><a routerLink="home" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Inicio</a></li>
-                <li><a routerLink="games" routerLinkActive="active">Juegos</a></li>
-                <li><a routerLink="projects" routerLinkActive="active">Proyectos</a></li>
-                <li><a routerLink="education" routerLinkActive="active">Educación</a></li>
-                <li><a routerLink="skills" routerLinkActive="active">Habilidades</a></li>
-                <li><a routerLink="demo" routerLinkActive="active">Demo</a></li>
-                <li><a routerLink="contact" routerLinkActive="active">Contacto</a></li>
+                <li><a routerLink="home" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" (click)="closeMobileMenu()">Inicio</a></li>
+                <li><a routerLink="games" routerLinkActive="active" (click)="closeMobileMenu()">Juegos</a></li>
+                <li><a routerLink="projects" routerLinkActive="active" (click)="closeMobileMenu()">Proyectos</a></li>
+                <li><a routerLink="education" routerLinkActive="active" (click)="closeMobileMenu()">Educacion</a></li>
+                <li><a routerLink="skills" routerLinkActive="active" (click)="closeMobileMenu()">Habilidades</a></li>
+                <li><a routerLink="demo" routerLinkActive="active" (click)="closeMobileMenu()">Demo</a></li>
+                <li><a routerLink="contact" routerLinkActive="active" (click)="closeMobileMenu()">Contacto</a></li>
             </ul>
-        </nav>    
+        </nav>
     </div>
 </header>
