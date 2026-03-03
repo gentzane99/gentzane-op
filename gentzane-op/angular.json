@@ -19,10 +19,7 @@
           "options": {
             "browser": "src/main.ts",
             "tsConfig": "tsconfig.app.json",
-            "polyfills": [
-              "src/polyfills.ts",
-              "@angular/localize/init"
-            ],
+            "polyfills": ["src/polyfills.ts"],
             "assets": [
               {
                 "glob": "**/*",
@@ -76,18 +73,6 @@
         },
         "test": {
           "builder": "@angular/build:unit-test"
-        }
-      },
-      "i18n": {
-        "sourceLocale": {
-          "code": "es",
-          "baseHref": "/es/"
-        },
-        "locales": {
-          "en": {
-            "translation": "src/locale/messages.en.xlf",
-            "baseHref": "/en/"
-          }
         }
       }
     }
