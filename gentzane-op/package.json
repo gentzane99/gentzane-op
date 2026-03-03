@@ -1,13 +1,17 @@
 {
   "name": "gentzane-op",
   "version": "0.0.0",
+  "engines": {
+  "node": "20.x"
+},
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build --configuration production --localize",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:gentzane-op": "node dist/gentzane-op/server/server.mjs"
+    "serve:ssr:es": "node dist/gentzane-op/server/es/main.server.mjs",
+    "serve:ssr:en": "node dist/gentzane-op/server/en/main.server.mjs"
   },
   "prettier": {
     "printWidth": 100,
