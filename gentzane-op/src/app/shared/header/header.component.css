@@ -2,7 +2,7 @@
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(11, 11, 14, 0.72);
+  background: var(--bg);
   backdrop-filter: blur(10px);
 }
 
@@ -28,6 +28,29 @@
 
 .header-nav {
   display: block;
+}
+
+.theme-toggle {
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: color 160ms ease;
+}
+
+.theme-toggle:hover {
+  color: var(--text);
+}
+
+.theme-icon {
+  width: 18px;
+  height: 18px;
 }
 
 .menu-toggle {
@@ -94,7 +117,7 @@
   .header-title {
     font-size: 1.2rem;
     line-height: 1.1;
-    max-width: calc(100% - 58px);
+    max-width: calc(100% - 120px);
     white-space: normal;
   }
 

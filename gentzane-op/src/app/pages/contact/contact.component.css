@@ -38,7 +38,7 @@
   padding: 24px 20px;
   border-radius: 12px;
   background: var(--surface);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--border);
   text-decoration: none;
   color: inherit;
   flex: 0 1 calc((100% - 66px) / 4);
