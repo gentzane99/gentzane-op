@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+Disallow: /games
+Disallow: /projects
+Disallow: /skills
+Disallow: /education
+Disallow: /demo
+Disallow: /contact
