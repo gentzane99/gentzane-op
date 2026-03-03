@@ -164,3 +164,15 @@
     background: rgba(255, 255, 255, 0.04);
   }
 }
+
+@media (max-width: 980px) {
+  :root[data-theme="light"] .header-nav {
+    border: 1px solid color-mix(in oklch, var(--border) 85%, white 15%);
+    background: color-mix(in oklch, var(--surface) 94%, white 6%);
+    box-shadow: 0 12px 28px color-mix(in oklch, var(--foreground) 12%, transparent);
+  }
+
+  :root[data-theme="light"] .nav-list a:hover {
+    background: color-mix(in oklch, var(--accent) 10%, white 90%);
+  }
+}
