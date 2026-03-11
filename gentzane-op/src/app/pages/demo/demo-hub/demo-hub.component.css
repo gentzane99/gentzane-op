@@ -1,0 +1,173 @@
+:host {
+  display: block;
+}
+
+.demoMainPage {
+  display: flex;
+  flex-direction: column;
+  gap: 2.75rem;
+  color: var(--text);
+}
+
+.demosTitle {
+  margin: 0 0 var(--page-title-gap);
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.demosInfo {
+  margin: 0;
+  max-width: 62ch;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.demosContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.demo {
+  position: relative;
+  display: grid;
+  gap: 0.9rem;
+  min-height: 220px;
+  padding: 1.6rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background:
+    linear-gradient(180deg, rgba(255, 79, 163, 0.08), transparent 42%),
+    var(--surface);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  transition:
+    border-color 160ms ease,
+    box-shadow 160ms ease,
+    transform 160ms ease,
+    background 160ms ease;
+}
+
+.demo::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at top right, rgba(255, 79, 163, 0.18), transparent 34%);
+  opacity: 0.85;
+  pointer-events: none;
+}
+
+.demo:hover {
+  border-color: rgba(255, 79, 163, 0.7);
+  box-shadow:
+    0 0 0 1px rgba(255, 79, 163, 0.35),
+    0 20px 44px rgba(255, 79, 163, 0.14);
+  transform: translateY(-2px);
+}
+
+.demoTitle,
+.demoDescription {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+}
+
+.demoTitle {
+  max-width: calc(100% - 5.5rem);
+  color: var(--text);
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+.demoDescription {
+  max-width: 34ch;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.demoPath {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  border-radius: inherit;
+  text-decoration: none;
+}
+
+.demoPath::before {
+  content: 'Abrir demo';
+  position: absolute;
+  top: 1.35rem;
+  right: 1.35rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 5.5rem;
+  height: 2rem;
+  padding: 0 0.85rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 79, 163, 0.35);
+  background: rgba(255, 79, 163, 0.12);
+  color: var(--accent);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  transition:
+    background 160ms ease,
+    border-color 160ms ease,
+    box-shadow 160ms ease;
+}
+
+.demoPath:focus-visible {
+  outline: none;
+}
+
+.demo:has(.demoPath:focus-visible) {
+  border-color: rgba(255, 79, 163, 0.95);
+  box-shadow:
+    0 0 0 4px rgba(255, 79, 163, 0.22),
+    0 20px 44px rgba(255, 79, 163, 0.16);
+}
+
+.demo:hover .demoPath::before,
+.demo:has(.demoPath:focus-visible) .demoPath::before {
+  border-color: rgba(255, 79, 163, 0.65);
+  background: rgba(255, 79, 163, 0.18);
+  box-shadow: 0 8px 18px rgba(255, 79, 163, 0.14);
+}
+
+@media (max-width: 720px) {
+  .demoMainPage {
+    gap: 2.2rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .demosContainer {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .demo {
+    min-height: 200px;
+    padding: 1.25rem;
+  }
+
+  .demoTitle {
+    max-width: 100%;
+    font-size: 1.2rem;
+  }
+
+  .demoDescription {
+    max-width: none;
+  }
+
+  .demoPath::before {
+    top: auto;
+    right: auto;
+    bottom: 1rem;
+    left: 1rem;
+  }
+}

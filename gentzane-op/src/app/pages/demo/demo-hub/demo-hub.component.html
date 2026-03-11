@@ -1,0 +1,14 @@
+<main class="demoMainPage page-shell">
+    <h1 class="demosTitle">DEMOS</h1>
+    <p class="demosInfo">Aquí encontrareis unas demos que he creado para mi pagina web.</p>
+
+    <section class="demosContainer">
+        @for(demo of demos; track demo.id){
+            <div class="demo">
+                <h2 class="demoTitle">{{demo.title}}</h2>
+                <p class="demoDescription">{{demo.description}}</p>
+                <a class="demoPath" [routerLink]="demo.path"></a>
+            </div>
+        }
+    </section>
+</main>
